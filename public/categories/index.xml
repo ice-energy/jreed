@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on JohnnyReedProjects</title>
-    <link>https://ice-energy.github.io/johnr/public/categories/</link>
+    <link>https://ice-energy.github.io/jreed/public/categories/</link>
     <description>Recent content in Categories on JohnnyReedProjects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://ice-energy.github.io/johnr/public/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ice-energy.github.io/jreed/public/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cdc</title>
-      <link>https://ice-energy.github.io/johnr/public/categories/cdc/</link>
+      <link>https://ice-energy.github.io/jreed/public/categories/cdc/</link>
       <pubDate>Wed, 23 May 2018 12:28:40 -0700</pubDate>
       
-      <guid>https://ice-energy.github.io/johnr/public/categories/cdc/</guid>
+      <guid>https://ice-energy.github.io/jreed/public/categories/cdc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://ice-energy.github.io/johnr/public/categories/development/</link>
+      <link>https://ice-energy.github.io/jreed/public/categories/development/</link>
       <pubDate>Wed, 23 May 2018 15:52:28 -0700</pubDate>
       
-      <guid>https://ice-energy.github.io/johnr/public/categories/development/</guid>
+      <guid>https://ice-energy.github.io/jreed/public/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://ice-energy.github.io/johnr/public/categories/golang/</link>
+      <link>https://ice-energy.github.io/jreed/public/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://ice-energy.github.io/johnr/public/categories/golang/</guid>
+      <guid>https://ice-energy.github.io/jreed/public/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>https://ice-energy.github.io/johnr/public/categories/programming/</link>
+      <link>https://ice-energy.github.io/jreed/public/categories/programming/</link>
       <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
       
-      <guid>https://ice-energy.github.io/johnr/public/categories/programming/</guid>
+      <guid>https://ice-energy.github.io/jreed/public/categories/programming/</guid>
       <description></description>
     </item>
     
