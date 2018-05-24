@@ -22,8 +22,8 @@ find content -name cover_* -exec cp {} ./public/dp/img \;
 #cd public; sudo rsync -avD * /usr/share/monkey/dp; cd ..
 
 
-#rm -rf ~/dp/*
-#rsync -avD ./public/* ~/dp
+#rm -rf ~/johnr_ice-energy_github/*
+#rsync -avD ./public/* ~/johnr_ice-energy_github
 
 
 
