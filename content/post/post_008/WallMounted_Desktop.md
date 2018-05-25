@@ -22,7 +22,7 @@ menu: main
 
 ## Motherboard
 
-**DQ77KB**   [dq77kb](https://www.amazon.com/Intel-DQ77KB-Mini-ITX-BLKDQ77KB-1-Pack/dp/B00GJ5H0XK/ref=sr_1_1?ie=UTF8&qid=1527289293&sr=8-1&keywords=dq77kb&dpID=51WruYmhyUL&preST=_SX300_QL70_&dpSrc=srch)
+**DQ77KB**  &nbsp; &nbsp; Link here: [dq77kb](https://www.amazon.com/Intel-DQ77KB-Mini-ITX-BLKDQ77KB-1-Pack/dp/B00GJ5H0XK/ref=sr_1_1?ie=UTF8&qid=1527289293&sr=8-1&keywords=dq77kb&dpID=51WruYmhyUL&preST=_SX300_QL70_&dpSrc=srch)
 
 ![pic2](../img/dq77kb.jpg)
 
