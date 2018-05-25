@@ -216,9 +216,9 @@ package manager.
 
 ![pic6](../img/modbus_synaptic.png)
 
-This all originates from [libmodbus.org](libmodbus.org).
+This all originates from [libmodbus.org](http://libmodbus.org).
 
-And the documentation can be found at [libmodbus.org/documentation](libmodbus.org/documentation/).
+And the documentation can be found at [libmodbus.org/documentation](http://libmodbus.org/documentation/).
 
 Coding using the library is very straightforward, and the documentation was very helpful.
 Here's a little code snippet:
