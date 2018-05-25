@@ -21,7 +21,9 @@ CDC3_Host
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="John Reed" />
-	<meta name="description" content="This is just a test not sure what else to put in here This is just a test not sure what else to put in here" />
+	<meta name="description" content="Quick Summary This document describes the architecture of the CDC3 Host Interface, where the platform for execution is a Linux box. &amp;lsquo;Interface&amp;rsquo; is a physical USB connection between the Linux box and the CDC3 Control Processor.
+The Host Interface implements a fairly standard packet exchange mechanism, where data packets of size LESS THAN 256 are exchanged with the CDC3 Processor.
+serial_recv Module The serial_recv Module accepts input packets from the CDC3 Processor, and then routes them forward to other modules to do the actual work that is requested." />
 <meta name="generator" content="Hugo 0.40.3" />
 
 <link rel="shortcut icon" href="img/defaultFav.ico">
@@ -358,23 +360,75 @@ var bodyBgSwitchIndex = 0;
 			</h1>
 			<div class="sub header">
 					<div><span><i class="calendar outline icon"></i>May 23, 2018</span></div>
-					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="clock outline icon"></i>2 min read</span></div>
 					<div><span><i class="angle double up icon"></i>Last updated on May 23, 2018</span></div>
 			</div>
-			<hr>
+			<hr><div class="toc"><nav id="TableOfContents">
+<ul>
+<li><a href="#serial-recv-module">serial_recv Module</a></li>
+</ul>
+</nav></div>
+			
 			
 			<article class="post-content twemoji">
-				<p><img src="../img/cover_CDC3Host.jpg" alt="Intro" /></p>
+				
+
+<p><img src="../img/cover_CDC3Host.jpg" alt="Intro" /></p>
 
 <hr />
 
-<p>This is just a test
-not sure what else to
-put in here
-<br>
-This is just a test
-not sure what else to
-put in here</p>
+<p><strong>Quick Summary</strong>  This document describes the architecture of the
+<em>CDC3 Host Interface</em>, where the platform for execution is a Linux box.
+&lsquo;Interface&rsquo; is a physical USB connection between the Linux box and the
+CDC3 Control Processor.</p>
+
+<p>The Host Interface implements a fairly standard
+packet exchange mechanism, where data packets of size LESS THAN 256
+are exchanged with the CDC3 Processor.</p>
+
+<hr />
+
+<h1 id="serial-recv-module">serial_recv Module&nbsp;<a class="anchor" href="#serial-recv-module"><i class="small linkify icon"></i></a> </h1>
+
+<p>The serial_recv Module accepts input packets from the CDC3 Processor,
+and then routes them forward to other modules to do the actual work
+that is requested.</p>
+
+<p>From a programming perspective, input coming from USB is a simple byte
+stream.   <em>serial_recv</em> takes this byte input stream and makes data packets
+out of them.   The incoming byte stream looks like this:</p>
+
+<pre><code>        0xAA       Start of Packet
+        0x57       Start of Packet
+        Cmd        Cmd Byte
+        Len        Len of Data only, 254 bytes max
+        tag        a sequnce number
+        csum       checksum
+        data[0]
+        ..
+        ..
+        data[len-1]
+</code></pre>
+
+<p><em>serial_recv</em> will very slightly modify this input packet to produce a packet
+that will be forwarded on.    Here is the version of the packet that is
+forwarded on:</p>
+
+<pre><code>        Cmd        Cmd Byte
+        Len        Len of Data only, 254 bytes max
+        data[0]
+        ..
+        ..
+        data[len-1]
+</code></pre>
+
+<p>There are 2 destinations for the packets which have been received.
+The <em>Cmd</em> field is used to determine the packet destination.</p>
+
+<ul>
+<li>1.  Packet_Handler:     data log packets, request type packets</li>
+<li>2.  Response_Handler:   response to host query</li>
+</ul>
 
 			</article>
 		</section>
