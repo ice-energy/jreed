@@ -201,8 +201,8 @@ Here's a screenshot of the client:
 # Modbus Client, Linux
 
 The windows client is great for manual control of the Modbus registers.
-- 2 button clicks to write a value
-- 1 click to read a value
+ - 2 button clicks to write a value
+ - 1 click to read a value
 
 What you lose with a GUI typically though is the ability to automate and log stuff.
 
