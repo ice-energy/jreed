@@ -359,7 +359,7 @@ var bodyBgSwitchIndex = 0;
 			</h1>
 			<div class="sub header">
 					<div><span><i class="calendar outline icon"></i>May 23, 2018</span></div>
-					<div><span><i class="clock outline icon"></i>4 min read</span></div>
+					<div><span><i class="clock outline icon"></i>5 min read</span></div>
 					<div><span><i class="angle double up icon"></i>Last updated on May 23, 2018</span></div>
 			</div>
 			<hr><div class="toc"><nav id="TableOfContents">
@@ -563,9 +563,69 @@ Click PLC.  I used this client to verify all the functionality described above.<
 
 <p>Here&rsquo;s a screenshot of the client:</p>
 
-<p><img src="../img/wintcpclient.png" alt="pic4" /></p>
+<p><img src="../img/wintcpclient.png" alt="pic5" /></p>
+
+<hr />
 
 <h1 id="modbus-client-linux">Modbus Client, Linux&nbsp;<a class="anchor" href="#modbus-client-linux"><i class="small linkify icon"></i></a> </h1>
+
+<p>The windows client is great for manual control of the Modbus registers.
+- 2 button clicks to write a value
+- 1 click to read a value</p>
+
+<p>What you lose with a GUI typically though is the ability to automate and log stuff.</p>
+
+<blockquote>
+<p>I couldn&rsquo;t figure out how to use the GUI to read a register every X seconds AND log
+  data to a file.</p>
+</blockquote>
+
+<p>Enter the <em>Modbus Client, Linux</em>!!</p>
+
+<p>Under Ubuntu Linux there&rsquo;s a Modbus library that&rsquo;s installable through the synaptic
+package manager.</p>
+
+<p><img src="../img/modbus_synaptic.png" alt="pic6" /></p>
+
+<p>This all originates from <a href="libmodbus.org">libmodbus.org</a>.</p>
+
+<p>And the documentation can be found at <a href="libmodbus.org/documentation/">libmodbus.org/documentation</a>.</p>
+
+<p>Coding using the library is very straightforward, and the documentation was very helpful.
+Here&rsquo;s a little code snippet:</p>
+
+<pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;modbus/modbus.h&gt;
+#include &lt;modbus/modbus-tcp.h&gt;
+#include &lt;modbus/modbus-version.h&gt;
+
+void main( void )
+{
+    modbus_t *mb;
+    uint16_t tab_reg[32];
+    int      rc;
+    int      i;
+
+
+    mb = modbus_new_tcp(&quot;192.168.20.14&quot;, 502);
+    if( mb == NULL )
+    {
+        fprintf(stderr, &quot;fail on modbus_new_tcp\n&quot;);
+        return;
+    }
+
+    if( modbus_connect(mb) == -1 )
+    {
+    ...
+    ...
+    ...
+
+</code></pre>
+
+<p>Here&rsquo;s link to full source code: <a href="../img/xmodbus.c">xmodbus.c</a></p>
+
+<hr />
 
 			</article>
 		</section>

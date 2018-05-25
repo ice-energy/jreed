@@ -194,10 +194,86 @@ Click PLC.  I used this client to verify all the functionality described above.
 
 Here's a screenshot of the client:
 
-![pic4](../img/wintcpclient.png)
+![pic5](../img/wintcpclient.png)
 
+---
 
 # Modbus Client, Linux
+
+The windows client is great for manual control of the Modbus registers.
+- 2 button clicks to write a value
+- 1 click to read a value
+
+What you lose with a GUI typically though is the ability to automate and log stuff.
+
+> I couldn't figure out how to use the GUI to read a register every X seconds AND log
+  data to a file.
+
+Enter the *Modbus Client, Linux*!!
+
+Under Ubuntu Linux there's a Modbus library that's installable through the synaptic
+package manager.
+
+![pic6](../img/modbus_synaptic.png)
+
+This all originates from [libmodbus.org](libmodbus.org).
+
+And the documentation can be found at [libmodbus.org/documentation](libmodbus.org/documentation/).
+
+Coding using the library is very straightforward, and the documentation was very helpful.
+Here's a little code snippet:
+
+```
+
+#include <stdio.h>
+#include <modbus/modbus.h>
+#include <modbus/modbus-tcp.h>
+#include <modbus/modbus-version.h>
+
+void main( void )
+{
+    modbus_t *mb;
+    uint16_t tab_reg[32];
+    int      rc;
+    int      i;
+
+
+    mb = modbus_new_tcp("192.168.20.14", 502);
+    if( mb == NULL )
+    {
+        fprintf(stderr, "fail on modbus_new_tcp\n");
+        return;
+    }
+
+    if( modbus_connect(mb) == -1 )
+    {
+    ...
+    ...
+    ...
+
+```
+
+Here's link to full source code: [xmodbus.c](../img/xmodbus.c)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
