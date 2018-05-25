@@ -27,5 +27,35 @@ When it's all built, it needs to be uploaded to github for display.
 Now typically I would use a gui to do this, but these lines could
 be added to x.sh in order to automatically upload to github:
 
+```
+     git add .
+     git commit -m "auto-commit from x.sh.  Best to put a real message in here"
+     git push -u origin master
+```
+
+Browse to:
+
+```
+     ice-energy.github.io/jreed
+```
+
+The *jreed* repository has been setup (Gear Wheel, Settings) to
+allow for `GitHub Pages`.   The key to configuring this is having
+the **Source**:
+
+```
+     master branch /docs folder
+```
+
+
+
+Good to Go!
+
+
+
+JR
+
+
+
 
 
