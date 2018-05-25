@@ -39,14 +39,22 @@ Browse to:
      ice-energy.github.io/jreed
 ```
 
-The *jreed* repository has been setup (Gear Wheel, Settings) to
-allow for `GitHub Pages`.   The key to configuring this is having
-the **Source**:
+To allow for these server pages on GitHub, a particular setup
+on the repository needs to be done.
+
+```
+     Click the Settings Tab up near the top
+```
+
+Scroll down a bit to **GitHub Pages**.
+
+Change **Source** to:
 
 ```
      master branch /docs folder
 ```
 
+Hit **Save**.
 
 
 Good to Go!
