@@ -8,7 +8,7 @@ categories:
 - cdc
 description : "a PLC-type controller with a Modbus interface is used to control an
 IceBear and also extract data from it"
-cover: "/jreed/docs/img/cover_PLCmodules.png"
+cover: "/jreed/img/cover_PLCmodules.png"
 draft: false
 
 ---

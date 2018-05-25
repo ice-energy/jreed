@@ -7,7 +7,7 @@ tags:
 categories:
 - programming
 description : "The challenges which I faced while installing and using **django-netjsonconfig**. "
-cover: "/jreed/docs/img/cover_django2.png"
+cover: "/jreed/img/cover_django2.png"
 draft: false
 ---
 

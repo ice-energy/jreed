@@ -5,7 +5,7 @@ tags:
 - google code in
 - openwisp
 description : "My experiences with Google Code-in 2017 and OpenWISP."
-cover : "/jreed/docs/img/cover_gci-thumb.png"
+cover : "/jreed/img/cover_gci-thumb.png"
 draft: false
 ---
 ![GCI](../img/gci-wide.png)Recently I've been participating in [Google Code-in](https://codein.withgoogle.com/) which is Google's initiative to introduce young minds to the concept of **FOSS**, that is **Free or Open-Source Softwares**. This post is for sharing my experiences with GCI, as the title suggests. So let's just get on it. 
