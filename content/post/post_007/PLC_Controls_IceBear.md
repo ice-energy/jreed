@@ -200,15 +200,15 @@ Here's a screenshot of the client:
 
 # Modbus Client, Linux
 
-The windows client is great for manual control of the Modbus registers.
+The windows client is great for manual control of the Modbus registers.  
+This is the typical process:
 
 - 2 button clicks to write a value
 - 1 click to read a value
 
 What you lose with a GUI typically though is the ability to automate and log stuff.
 
-> I couldn't figure out how to use the GUI to read a register every X seconds AND log
-  data to a file.
+> The SimplyModbus GUI cannot read a register every X seconds AND log to file
 
 Enter the *Modbus Client, Linux*!!
 

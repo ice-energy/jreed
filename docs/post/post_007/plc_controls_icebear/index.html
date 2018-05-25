@@ -23,7 +23,7 @@ IceBear Control Using PLC
 	<meta name="author" content="John Reed" />
 	<meta name="description" content="Quick Summary: An off-the-shelf external controller may be used to interface directly with the CDC controller to control the IceBears&amp;rsquo; cycle of Making Ice and Providing Cooling. An example scenario will be shown using a PLC-type controller with a Modbus interface that is used to control an IceBear AND ALSO extract data from it.
 CDC Controller GPIO Inputs: The CDC controller has 8 GPIO inputs as shown in the above picture:" />
-<meta name="generator" content="Hugo 0.40.3" />
+<meta name="generator" content="Hugo 0.41" />
 
 <link rel="shortcut icon" href="img/defaultFav.ico">
 
@@ -569,7 +569,8 @@ Click PLC.  I used this client to verify all the functionality described above.<
 
 <h1 id="modbus-client-linux">Modbus Client, Linux&nbsp;<a class="anchor" href="#modbus-client-linux"><i class="small linkify icon"></i></a> </h1>
 
-<p>The windows client is great for manual control of the Modbus registers.</p>
+<p>The windows client is great for manual control of the Modbus registers.<br />
+This is the typical process:</p>
 
 <ul>
 <li>2 button clicks to write a value</li>
@@ -579,8 +580,7 @@ Click PLC.  I used this client to verify all the functionality described above.<
 <p>What you lose with a GUI typically though is the ability to automate and log stuff.</p>
 
 <blockquote>
-<p>I couldn&rsquo;t figure out how to use the GUI to read a register every X seconds AND log
-  data to a file.</p>
+<p>The SimplyModbus GUI cannot read a register every X seconds AND log to file</p>
 </blockquote>
 
 <p>Enter the <em>Modbus Client, Linux</em>!!</p>
