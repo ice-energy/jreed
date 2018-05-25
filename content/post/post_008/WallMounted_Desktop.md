@@ -7,12 +7,12 @@ categories:
 - BareBoards
 description : "Because every Mad (Computer) Scientest needs their Hardware Wall-Mounted"
 draft: false
-cover: "/jreed/img/wallmounted.jpg"
+cover: "/jreed/img/cover_wallmounted.jpg"
 menu: main
 
 ---
 
-![pic1](../img/wallmounted.jpg)
+![pic1](../img/cover_wallmounted.jpg)
 
 ---
 
