@@ -235,9 +235,7 @@ void main( void )
 {
     modbus_t *mb;
     uint16_t tab_reg[32];
-    int      rc;
-    int      i;
-
+    int      rc,i;
 
     mb = modbus_new_tcp("192.168.20.14", 502);
     if( mb == NULL )
