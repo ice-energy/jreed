@@ -27,7 +27,7 @@ don't get put in the correct spot.
 When it's all built, it needs to be uploaded to github for display.
 
 Now typically I would use a gui to do this, but these lines could
-be added to x.sh in order to automatically upload to github:
+be added to x.sh in order to automatically upload to github.
 
 ```
      git add .
@@ -45,6 +45,9 @@ To allow for these server pages on GitHub, a particular setup
 on the repository needs to be done.
 
 ```
+     github.com/ice-energy
+     You have to be logged in as ice-energy
+     You have to be in the jreed repository
      Click the Settings Tab up near the top
 ```
 
