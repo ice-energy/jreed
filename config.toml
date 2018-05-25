@@ -2,7 +2,7 @@
 #baseURL               = "http://localhost/dp"
 #baseURL               = "http://192.168.11.247/dp"
 #baseURL                = "https://loogatee.github.io/dp"
-baseURL                = "https://ice-energy.github.io/jreed/docs"
+baseURL                = "https://ice-energy.github.io/jreed"
 languageCode           = "en-us"
 defaultContentLanguage = "en"
 title                  = "JohnnyReedProjects"
@@ -22,7 +22,7 @@ enableEmoji      = true
 	author           = "John Reed"
 	description      = "My Projects: A Placeholder for Notes & Documentation"
 	avatar           = "img/jr.jpg"
-	motto            = "Computer guy, Golfer dude"
+	motto            = "Computer guy, Golfer dudE"
 	enableToc        = true
 	#enableShareCard = true
 

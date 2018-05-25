@@ -2,7 +2,7 @@
 title: "Proj_Ready_For_Pic"
 date:  2018-05-11T21:52:28-07:00
 draft: true
-cover: "/jreed/docs/img/cover_rfpic.jpg"
+cover: "/jreed/img/cover_rfpic.jpg"
 tags:
   - "development"
 categories:
