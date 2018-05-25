@@ -22,7 +22,9 @@ I've also found in working with the dream-plus theme (maybe it's an
 overall hugo thing?) that Cover Images (cover image of a post)
 don't get put in the correct spot.
 
->      **The x.sh shell script fixes up everything**
+```
+      ** The x.sh shell script fixes up everything **
+```
 
 When it's all built, it needs to be uploaded to github for display.
 
