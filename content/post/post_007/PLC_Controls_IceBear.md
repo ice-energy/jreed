@@ -181,10 +181,23 @@ UnitActivePowerFlow = DS13 / 10           // Analog Voltage Input (CH2)
 
 This means that the Host reads DS13 and then divides by 10 to get the ActivePowerFlow.
 
+---
+
+# Modbus Client, Windows
+
+I've had success in using the Windows Modbus Client from here:
+
+[http://www.simplymodbus.ca/TCPclient.htm](http://www.simplymodbus.ca/TCPclient.htm)
+
+This is a GUI client, and it's very untuitive to use.   I could successfully read and write registers of the
+Click PLC.  I used this client to verify all the functionality described above.
+
+Here's a screenshot of the client:
+
+![pic4](../img/wintcpclient.png)
 
 
-
-
+# Modbus Client, Linux
 
 
 

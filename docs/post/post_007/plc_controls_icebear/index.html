@@ -379,6 +379,8 @@ var bodyBgSwitchIndex = 0;
 <li><a href="#ds11-register-40011-plc-write-host-read">DS11 = register 40011 (PLC Write / Host Read)</a></li>
 <li><a href="#ds13-register-40013-plc-write-host-read">DS13 = register 40013 (PLC Write / Host Read)</a></li>
 </ul></li>
+<li><a href="#modbus-client-windows">Modbus Client, Windows</a></li>
+<li><a href="#modbus-client-linux">Modbus Client, Linux</a></li>
 </ul>
 </nav></div>
 			
@@ -547,6 +549,23 @@ UnitActivePowerFlow = DS13 / 10           // Analog Voltage Input (CH2)
 </code></pre>
 
 <p>This means that the Host reads DS13 and then divides by 10 to get the ActivePowerFlow.</p>
+
+<hr />
+
+<h1 id="modbus-client-windows">Modbus Client, Windows&nbsp;<a class="anchor" href="#modbus-client-windows"><i class="small linkify icon"></i></a> </h1>
+
+<p>I&rsquo;ve had success in using the Windows Modbus Client from here:</p>
+
+<p><a href="http://www.simplymodbus.ca/TCPclient.htm">http://www.simplymodbus.ca/TCPclient.htm</a></p>
+
+<p>This is a GUI client, and it&rsquo;s very untuitive to use.   I could successfully read and write registers of the
+Click PLC.  I used this client to verify all the functionality described above.</p>
+
+<p>Here&rsquo;s a screenshot of the client:</p>
+
+<p><img src="../img/wintcpclient.png" alt="pic4" /></p>
+
+<h1 id="modbus-client-linux">Modbus Client, Linux&nbsp;<a class="anchor" href="#modbus-client-linux"><i class="small linkify icon"></i></a> </h1>
 
 			</article>
 		</section>
