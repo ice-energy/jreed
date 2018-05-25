@@ -31,20 +31,20 @@ Everything you need in a very tight package.
 
 ## CPU
 
-**Intel Core i7-3770K**  [i7-3770K](https://www.amazon.com/Intel-i7-3770K-Quad-Core-Processor-Cache/dp/B007SZ0EOW)
+**Intel Core i7-3770K**  &nbsp; &nbsp; Link here: [i7-3770K](https://www.amazon.com/Intel-i7-3770K-Quad-Core-Processor-Cache/dp/B007SZ0EOW)
 
 ![pic3](../img/i73770K.jpg)
 
 Quad Core, 8 CPU's.  3.5Ghz.   Folks, this chip is the *Real Deal*.  Get a big(ger) power supply!!  (See below)
 
-OK here's the deal. The 3770S is the ideal part, but the 'K' will still work fine.   My 'K' worked out-of-the
+The 3770S part is really the ideal part for the board, but the 'K' will still work fine.   My 'K' worked out-of-the
 box on the MotherBoard, but then I *upgraded the firmware*.   Don't do that.
 
 > Newer firmware on the DQ77KB will reject the K.  I had to Downgrade the firmware.
 
 ## Fan
 
-**Thermaltake Engine 27**  [engine27](https://www.amazon.com/Thermaltake-Engine-Low-Profile-Cooling-CL-P032-CA06SL/dp/B01MCT9V18)
+**Thermaltake Engine 27**  &nbsp; &nbsp; Link here: [engine27](https://www.amazon.com/Thermaltake-Engine-Low-Profile-Cooling-CL-P032-CA06SL/dp/B01MCT9V18)
 
 ![pic4](../img/engine27.jpg)
 
