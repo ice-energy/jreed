@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/post/post_008/wallmounted_desktop/</loc>
+    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/post/post_007/plc_controls_icebear/</loc>
     <lastmod>2018-05-25T14:55:00+00:00</lastmod>
   </url>
@@ -42,7 +47,14 @@
   </url>
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/categories/bareboards/</loc>
+    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/categories/</loc>
+    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -102,7 +114,7 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/</loc>
-    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
+    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -126,7 +138,7 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/post/</loc>
-    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
+    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -151,6 +163,12 @@
   <url>
     <loc>https://ice-energy.github.io/jreed/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ice-energy.github.io/jreed/tags/ubuntu/</loc>
+    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
