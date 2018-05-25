@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/post/post_007/plc_controls_icebear/</loc>
+    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/post/post_002/cdc3_host/</loc>
     <lastmod>2018-05-23T15:52:28-07:00</lastmod>
   </url>
@@ -42,13 +47,19 @@
   </url>
   
   <url>
-    <loc>https://ice-energy.github.io/jreed/categories/development/</loc>
-    <lastmod>2018-05-23T15:52:28-07:00</lastmod>
+    <loc>https://ice-energy.github.io/jreed/categories/cdc/</loc>
+    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ice-energy.github.io/jreed/tags/development/</loc>
+    <lastmod>2018-05-23T15:52:28-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ice-energy.github.io/jreed/categories/development/</loc>
     <lastmod>2018-05-23T15:52:28-07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -72,13 +83,13 @@
   </url>
   
   <url>
-    <loc>https://ice-energy.github.io/jreed/categories/golang/</loc>
+    <loc>https://ice-energy.github.io/jreed/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ice-energy.github.io/jreed/tags/golang/</loc>
+    <loc>https://ice-energy.github.io/jreed/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -91,7 +102,13 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/</loc>
-    <lastmod>2018-05-23T15:52:28-07:00</lastmod>
+    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ice-energy.github.io/jreed/tags/modbus/</loc>
+    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -102,8 +119,14 @@
   </url>
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/tags/plc/</loc>
+    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/post/</loc>
-    <lastmod>2018-05-23T15:52:28-07:00</lastmod>
+    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
