@@ -9,6 +9,7 @@ categories:
 description : "The challenges which I faced while installing and using **django-netjsonconfig**. "
 cover: "/jreed/img/cover_django2.png"
 draft: false
+menu: main
 ---
 
 A task came up in Google Code-in which asked me to install the

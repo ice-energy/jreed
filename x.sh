@@ -2,7 +2,7 @@
 #set -x
 
 rm -rf ./public
-hugo --buildDrafts
+hugo
 
 mkdir -p public/jreed/docs/img
 

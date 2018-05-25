@@ -22,7 +22,7 @@ enableEmoji      = true
 	author           = "John Reed"
 	description      = "My Projects: A Placeholder for Notes & Documentation"
 	avatar           = "img/jr.jpg"
-	motto            = "Computer guy, Golfer dudE"
+	motto            = "Computer guy, Golfer dude"
 	enableToc        = true
 	#enableShareCard = true
 

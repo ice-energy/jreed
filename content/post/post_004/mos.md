@@ -6,6 +6,7 @@ tags:
 - esp32
 description: "A tutorial on how to install Mongoose OS on ESPer."
 cover: "/jreed/img/cover_esp32Mongoose.jpg"
+menu: main
 ---
 ![Intro](../img/cover_esp32Mongoose.jpg)
 

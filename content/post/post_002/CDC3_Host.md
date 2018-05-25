@@ -1,7 +1,7 @@
 ---
 title: "CDC3_Host"
 date: 2018-05-23T15:52:28-07:00
-draft: true
+draft: false
 cover: "/jreed/img/cover_CDC3Host.jpg"
 tags:
   - "development"
