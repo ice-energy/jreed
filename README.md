@@ -1,5 +1,6 @@
 
-This is a Hugo tree, and is meant to be built using hugo!
+This is a Hugo tree, and is meant to be built using
+[hugo](https://gohugo.io).
 
 ```
      git clone https://github.com/ice-energy/jreed.git
@@ -7,9 +8,8 @@ This is a Hugo tree, and is meant to be built using hugo!
      hugo
 ```
 
-hugo outputs a directory named public in the root of the
-repository.  Rename that directory
-to 'docs'
+hugo outputs a directory named **public** in the root of the
+repository.  Rename that directory to 'docs'
 
 ```
      mv public docs
@@ -18,11 +18,11 @@ to 'docs'
 Those 2 steps are included in the shell script **x.sh**, which
 automates it all.
 
-I've also found in working with dream-plus theme (maybe it's an
+I've also found in working with the dream-plus theme (maybe it's an
 overall hugo thing?) that Cover Images (cover image of a post)
 don't get put in the correct spot.
 
-   **The x.sh shell script fixes up everything**
+>      **The x.sh shell script fixes up everything**
 
 When it's all built, it needs to be uploaded to github for display.
 
