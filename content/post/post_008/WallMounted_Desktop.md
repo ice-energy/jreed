@@ -2,9 +2,10 @@
 title:  "Wall Mounted Desktop"
 date:   2018-05-25T16:28:00
 tags:
+- Linux
 - Ubuntu
 categories:
-- BareBoards
+- Systems/Solutions
 description : "Because every Mad (Computer) Scientist needs their Hardware Wall-Mounted"
 draft: false
 cover: "/jreed/img/cover_wallmounted.jpg"

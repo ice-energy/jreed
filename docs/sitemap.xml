@@ -33,25 +33,13 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/categories/bareboards/</loc>
-    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
+    <lastmod>2018-05-11T21:52:28-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ice-energy.github.io/jreed/categories/</loc>
-    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ice-energy.github.io/jreed/categories/cdc/</loc>
-    <lastmod>2018-05-25T14:55:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ice-energy.github.io/jreed/tags/development/</loc>
-    <lastmod>2018-05-23T15:52:28-07:00</lastmod>
+    <lastmod>2018-05-11T21:52:28-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -62,19 +50,7 @@
   </url>
   
   <url>
-    <loc>https://ice-energy.github.io/jreed/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ice-energy.github.io/jreed/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ice-energy.github.io/jreed/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -86,8 +62,20 @@
   </url>
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/tags/linux/</loc>
+    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/tags/modbus/</loc>
     <lastmod>2018-05-25T14:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ice-energy.github.io/jreed/tags/pic/</loc>
+    <lastmod>2018-05-11T21:52:28-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -104,19 +92,13 @@
   </url>
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/categories/systems/solutions/</loc>
+    <lastmod>2018-05-25T16:28:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/tags/</loc>
-    <lastmod>2018-05-23T15:52:28-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ice-energy.github.io/jreed/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ice-energy.github.io/jreed/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -124,6 +106,12 @@
   <url>
     <loc>https://ice-energy.github.io/jreed/tags/ubuntu/</loc>
     <lastmod>2018-05-25T16:28:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ice-energy.github.io/jreed/tags/zmq/</loc>
+    <lastmod>2018-05-23T15:52:28-07:00</lastmod>
     <priority>0</priority>
   </url>
   

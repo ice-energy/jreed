@@ -23,15 +23,6 @@ serial_recv Module The serial_recv Module accepts input packets from the CDC3 Pr
     </item>
     
     <item>
-      <title>Proj_Ready_For_Pic</title>
-      <link>https://ice-energy.github.io/jreed/post/post_001/proj_readyforpic/</link>
-      <pubDate>Fri, 11 May 2018 21:52:28 -0700</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/post/post_001/proj_readyforpic/</guid>
-      <description>Hello World Random Random Random</description>
-    </item>
-    
-    <item>
       <title>(Hu)go Template Primer</title>
       <link>https://ice-energy.github.io/jreed/post/post_005/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>

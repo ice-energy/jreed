@@ -4,7 +4,8 @@ date: 2018-05-23T15:52:28-07:00
 draft: false
 cover: "/jreed/img/cover_CDC3Host.jpg"
 tags:
-  - "development"
+  - "zmq"
+  - "linux"
 categories:
   - "Development"
 description: "This document describes the architecture of the

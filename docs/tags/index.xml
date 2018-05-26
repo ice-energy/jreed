@@ -6,28 +6,10 @@
     <description>Recent content in Tags on JohnnyReedProjects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 May 2018 15:52:28 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ice-energy.github.io/jreed/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Development</title>
-      <link>https://ice-energy.github.io/jreed/tags/development/</link>
-      <pubDate>Wed, 23 May 2018 15:52:28 -0700</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://ice-energy.github.io/jreed/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/go/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Golang</title>
@@ -35,6 +17,15 @@
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://ice-energy.github.io/jreed/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://ice-energy.github.io/jreed/tags/linux/</link>
+      <pubDate>Fri, 25 May 2018 16:28:00 +0000</pubDate>
+      
+      <guid>https://ice-energy.github.io/jreed/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -48,6 +39,15 @@
     </item>
     
     <item>
+      <title>Pic</title>
+      <link>https://ice-energy.github.io/jreed/tags/pic/</link>
+      <pubDate>Fri, 11 May 2018 21:52:28 -0700</pubDate>
+      
+      <guid>https://ice-energy.github.io/jreed/tags/pic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Plc</title>
       <link>https://ice-energy.github.io/jreed/tags/plc/</link>
       <pubDate>Fri, 25 May 2018 14:55:00 +0000</pubDate>
@@ -57,29 +57,20 @@
     </item>
     
     <item>
-      <title>Templates</title>
-      <link>https://ice-energy.github.io/jreed/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://ice-energy.github.io/jreed/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ubuntu</title>
       <link>https://ice-energy.github.io/jreed/tags/ubuntu/</link>
       <pubDate>Fri, 25 May 2018 16:28:00 +0000</pubDate>
       
       <guid>https://ice-energy.github.io/jreed/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zmq</title>
+      <link>https://ice-energy.github.io/jreed/tags/zmq/</link>
+      <pubDate>Wed, 23 May 2018 15:52:28 -0700</pubDate>
+      
+      <guid>https://ice-energy.github.io/jreed/tags/zmq/</guid>
       <description></description>
     </item>
     

@@ -3,14 +3,9 @@ title: "(Hu)go Template Primer"
 date: 2014-04-02
 cover: "/jreed/img/cover_gotemplate.jpg"
 tags:
-  - "go"
   - "golang"
-  - "templates"
-  - "themes"
-  - "development"
 categories:
-  - "Development"
-  - "golang"
+  - "development"
 menu: main
 ---
 

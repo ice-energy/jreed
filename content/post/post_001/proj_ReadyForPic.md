@@ -4,9 +4,9 @@ date:  2018-05-11T21:52:28-07:00
 draft: false
 cover: "/jreed/img/cover_rfpic.jpg"
 tags:
-  - "development"
+  - "PIC"
 categories:
-  - "Development"
+  - "bareboards"
 menu: main
 ---
 ![Intro](../img/cover_rfpic.jpg)
