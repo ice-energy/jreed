@@ -51,6 +51,27 @@ box on the MotherBoard, but then I *upgraded the firmware*.   Don't do that.
 This fan is super quiet, and it looks *friggin' awesome*.
 A bit pricey, but worth it.
 
+## Dram
+
+**Kingston 16Gb Ram**  &nbsp;  Need two 8Gb parts. &nbsp;  Link here:  [Kingston 16Gb](https://www.amazon.com/gp/product/B0089JIDUI/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1)
+
+![pic5](../img/dram.jpg)
+
+This is the max ram for this MotherBoard.  Some of the newer MiniITX's will allow 32Gb.
+
+## Disk
+
+**Intel SSD 800Gb** &nbsp; &nbsp; Link here:  [SSD Drive](https://www.amazon.com/Intel-S3700-Internal-Solid-State/dp/B00APLB6G6)
+
+![pic6](../img/ssdDrive.jpg)
+
+Holy Cow, Pricey!!  This was a gift from my time at the Signage Lab.   Thank you Ed!!
+
+## Power Supply
+
+
+
+
 
 
 
