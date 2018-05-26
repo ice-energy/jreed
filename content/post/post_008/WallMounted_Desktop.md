@@ -80,6 +80,17 @@ The spec for the Barrel is `7.4 * 5.0`.
 The Board can handle 12amps so this Power Supply be just fine.
 
 
+## Sata Power Cable
+
+**RaidMax RC-044-O** &nbsp; &nbsp; Link here:  [SataPowerCable](https://www.frys.com/product/9050437?source=google&gclid=EAIaIQobChMIjr6xppqi2wIVBA5pCh36jwUqEAYYASABEgIpqvD_BwE)
+
+![pic7](../img/sataPowerCable.jpg)
+
+I found this cable off-the-shelf at my local Fry's in Phoenix. (about $6)
+Looks like they've been discontinued, but you can still get them at Fry's.
+I cut my cable down to size to fit the distance between board connector and SSD.
+I really like the looks of this cable, and especially like its flexibility.
+
 
 
 
