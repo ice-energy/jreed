@@ -69,9 +69,13 @@ Holy Cow, Pricey!!  This was a gift from my time at the Signage Lab.   Thank you
 
 ## Power Supply
 
+**19v 180W Dell Power Supply** &nbsp; &nbsp; [Power Supply](https://www.amazon.com/gp/product/B07D4F2L86/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
 
 
+![pic7](../img/powersupply.jpg)
 
+I got the biggest one I could find.  The key is the Barrel.
+The spec for the Barrel is `7.4 * 5.0`.
 
 
 
