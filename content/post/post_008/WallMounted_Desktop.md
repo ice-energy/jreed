@@ -92,10 +92,18 @@ I cut my cable down to size to fit the distance between board connector and SSD.
 I really like the looks of this cable, and especially like its flexibility.
 
 
+---
+
+<br>
+<br>
+
+![picEnd](../img/dq77kb_close.jpg)
 
 
+<br>
+<br>
 
 
-
+---
 
 
