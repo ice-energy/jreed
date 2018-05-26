@@ -6,7 +6,7 @@
     <description>Recent content on JohnnyReedProjects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 May 2018 16:28:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 May 2018 12:19:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ice-energy.github.io/jreed/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,14 +14,12 @@
     <item>
       <title>Wall Mounted Desktop</title>
       <link>https://ice-energy.github.io/jreed/post/post_008/wallmounted_desktop/</link>
-      <pubDate>Fri, 25 May 2018 16:28:00 +0000</pubDate>
+      <pubDate>Sat, 26 May 2018 12:19:00 +0000</pubDate>
       
       <guid>https://ice-energy.github.io/jreed/post/post_008/wallmounted_desktop/</guid>
-      <description>Quick Summary: These are the specs and links for my Wall-Mounted Desktop.
-Motherboard DQ77KB &amp;nbsp; &amp;nbsp; Link here: dq77kb
-I worked a year at Intel in the Digital Signage Lab, and we used these boards to put systems together. Everything you need in a very tight package.
-CPU Intel Core i7-3770K &amp;nbsp; &amp;nbsp; Link here: i7-3770K
-Quad Core, 8 CPU&amp;rsquo;s. 3.5Ghz. Folks, this chip is the Real Deal. Get a big(ger) power supply!</description>
+      <description>I put together this computer largely from spare parts and Amazon points from my Amex. So barely cost anything, and my intent is to use it as a server for Zoneminder.
+So built it up with the intention of putting it in an enclosure. It started out sitting on my bookshelf, where I used some half-inch standoffs to raise it up. Here&amp;rsquo;s a pic:
+It sat there a few weeks, I looked at a few enclosures, almost threw down on one.</description>
     </item>
     
     <item>

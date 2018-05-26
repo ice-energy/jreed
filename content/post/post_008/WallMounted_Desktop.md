@@ -1,8 +1,8 @@
 ---
 title:  "Wall Mounted Desktop"
-date:   2018-05-25T16:28:00
+date:   2018-05-26T12:19:00
 tags:
-- Linux
+- zomeminder
 - Ubuntu
 categories:
 - Systems/Solutions
@@ -17,7 +17,27 @@ menu: main
 
 ---
 
-**Quick Summary:**  These are the specs and links for my Wall-Mounted Desktop.
+I put together this computer largely from spare parts and Amazon points from my Amex.
+So barely cost anything, and my intent is to use it as a server for 
+[Zoneminder](https://zoneminder.com/).
+
+So built it up with the intention of putting it in an enclosure.   It started out sitting
+on my bookshelf, where I used some half-inch standoffs to raise it up.   Here's a pic:
+
+![pic1a](../img/ontheshelf.jpg)
+
+It sat there a few weeks, I looked at a few enclosures, almost threw down on one.
+**Then inspiration stuck!**
+
+> right side brain:   Oh Man, That would look **FRIGGIN** awesome up on the wall
+
+> left side brain:    The cables could be arranged so nice and neatly
+
+Both sides agree! and that's what I call Win, Win!!     ;-)
+
+What follows is a list of parts, along with links and pics.
+
+JR
 
 ---
 
