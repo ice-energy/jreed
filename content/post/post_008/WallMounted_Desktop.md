@@ -21,13 +21,12 @@ I put together this computer largely from spare parts and Amazon points from my 
 So barely cost anything, and my intent is to use it as a server for 
 [Zoneminder](https://zoneminder.com/).
 
-So built it up with the intention of putting it in an enclosure.   It started out sitting
+This was built with the intention of putting it in an enclosure.   It started out sitting
 on my bookshelf, where I used some half-inch standoffs to raise it up.   Here's a pic:
 
 ![pic1a](../img/ontheshelf.jpg)
 
-It sat there a few weeks, I looked at a few enclosures, almost threw down on one.
-**Then inspiration stuck!**
+It sat there a few weeks. &nbsp; I looked at a few enclosures, almost threw down on one. &nbsp;  **Then inspiration stuck!**
 
 > right side brain:   Oh Man, That would look **FRIGGIN** awesome up on the wall
 
@@ -35,7 +34,10 @@ It sat there a few weeks, I looked at a few enclosures, almost threw down on one
 
 Both sides agree! and that's what I call Win, Win!!     ;-)
 
-What follows is a list of parts, along with links and pics.
+What follows is a list of parts, along with links, pics, and a small amount of commentary.
+
+ - And Oh Yeah, That's little brother *Raspberry Pi* next door **(Pi 3 Model B V1.2)**.
+   It's running *Ubuntu Core Server 14.04.5 LTS*.    Mainly used as a test platform.
 
 JR
 
