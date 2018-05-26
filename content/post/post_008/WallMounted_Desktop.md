@@ -61,7 +61,7 @@ This is the max ram for this MotherBoard.  Some of the newer MiniITX's will allo
 
 ## Disk
 
-**Intel SSD 800Gb** &nbsp; &nbsp; Link here:  [SSD Drive](https://www.amazon.com/Intel-S3700-Internal-Solid-State/dp/B00APLB6G6)
+**Intel SSD 800Gb** &nbsp; &nbsp; Link here: [SSD Drive](https://www.amazon.com/Intel-S3700-Internal-Solid-State/dp/B00APLB6G6)
 
 ![pic6](../img/ssdDrive.jpg)
 
@@ -69,13 +69,15 @@ Holy Cow, Pricey!!  This was a gift from my time at the Signage Lab.   Thank you
 
 ## Power Supply
 
-**19v 180W Dell Power Supply** &nbsp; &nbsp; [Power Supply](https://www.amazon.com/gp/product/B07D4F2L86/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+**19v 180W Dell Power Supply** &nbsp; &nbsp; Link here: [Power Supply](https://www.amazon.com/gp/product/B07D4F2L86/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
 
 
 ![pic7](../img/powersupply.jpg)
 
 I got the biggest one I could find.  The key is the Barrel.
 The spec for the Barrel is `7.4 * 5.0`.
+
+The Board can handle 12amps so this Power Supply be just fine.
 
 
 
