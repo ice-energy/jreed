@@ -5,7 +5,7 @@ tags:
 - Ubuntu
 categories:
 - BareBoards
-description : "Because every Mad (Computer) Scientest needs their Hardware Wall-Mounted"
+description : "Because every Mad (Computer) Scientist needs their Hardware Wall-Mounted"
 draft: false
 cover: "/jreed/img/cover_wallmounted.jpg"
 menu: main
