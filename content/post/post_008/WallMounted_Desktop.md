@@ -18,7 +18,7 @@ menu: main
 ---
 
 I put together this computer largely from spare parts and Amazon points from my Amex.
-So barely cost anything, and my intent is to use it as a server for 
+So barely cost anything, and I thought it would be perfect as a server for 
 [Zoneminder](https://zoneminder.com/).
 
 This was built with the intention of putting it in an enclosure.   It started out sitting
@@ -36,8 +36,8 @@ Both sides agree! and that's what I call Win, Win!!     ;-)
 
 What follows is a list of parts, along with links, pics, and a small amount of commentary.
 
- - And Oh Yeah, That's little brother *Raspberry Pi* next door **(Pi 3 Model B V1.2)**.
-   It's running *Ubuntu Core Server 14.04.5 LTS*.    Mainly used as a test platform.
+ &nbsp; &nbsp; And Oh Yeah, That's little brother *Raspberry Pi* next door **(Pi 3 Model B V1.2)**.<br>
+ &nbsp; &nbsp; It's running *Ubuntu Core Server 14.04.5 LTS*.    Mainly used as a test platform.
 
 JR
 
