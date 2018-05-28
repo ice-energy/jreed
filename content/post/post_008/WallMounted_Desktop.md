@@ -82,7 +82,7 @@ A bit pricey, but worth it.
 
 # Dram
 
-**Kingston 16Gb Ram**  &nbsp;  Need two 8Gb parts. &nbsp;  Link here:  [Kingston 16Gb](https://www.amazon.com/gp/product/B0089JIDUI/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1)
+**Kingston 16Gb Ram**  &nbsp;  Need two 8Gb parts. &nbsp;  Link here:  [Kingston 8Gb](https://www.amazon.com/gp/product/B0089JIDUI/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1)
 
 ![pic5](../img/dram.jpg)
 
