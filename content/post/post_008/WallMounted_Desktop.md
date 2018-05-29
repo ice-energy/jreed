@@ -2,7 +2,7 @@
 title:  "Wall Mounted Desktop"
 date:   2018-05-26T12:19:00
 tags:
-- zomeminder
+- zoneminder
 - Ubuntu
 categories:
 - Systems/Solutions
