@@ -32,7 +32,7 @@ enableEmoji      = true
 	enableTags       = true
 	enableCategories = true
 
-	itemsPerPage = 4                          # Cards or posts shown per page
+	itemsPerPage = 6                          # Cards or posts shown per page
 	contentType = "post"                      # Set whether you're hosting "cards" or "post"
 	#twitterEmoji=true
 
