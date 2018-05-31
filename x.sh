@@ -1,30 +1,35 @@
 #!/bin/bash
 
 
-rm -rf ./public
-hugo
+rm -rf ./docs
+hugo -c "./content_pub" -d "./docs"
 
-mkdir -p public/jreed/docs/img
+mkdir -p docs/jreed/docs/img
 
 #
 #   Find all names beginning in cover_
 #   Copy them to 2 different directories:
-#       1.  ./public/img
-#       2.  ./public/jreed/docs/img
+#       1.  ./docs/img
+#       2.  ./docs/jreed/docs/img
 #
 #   This works around some link-generation bugs in hugo
 #
-find content -name cover_* -exec cp {} ./public/img            \;
-find content -name cover_* -exec cp {} ./public/jreed/docs/img \;
+find content_pub -name cover_* -exec cp {} ./docs/img            \;
+find content_pub -name cover_* -exec cp {} ./docs/jreed/docs/img \;
 
+cp ./docs/img/README.txt ./docs/README.md
 
-cp ./public/img/README.txt ./public/README.md
+#
+# ==========================================
+#
 
+rm -rf ./docs_priv
+hugo -c "./content_priv" -d "./docs_priv"
 
-rm -rf docs
-mv public docs
+mkdir -p docs_priv/jreed/docs/img
 
+find content_priv -name cover_* -exec cp {} ./docs_priv/img            \;
+find content_priv -name cover_* -exec cp {} ./docs_priv/jreed/docs/img \;
 
-#git add .
-#git commit -m "auto-commit from x.sh.  Best to put a real message in here"
-#git push -u origin master
+cp ./docs_priv/img/README.txt ./docs_priv/README.md
+
