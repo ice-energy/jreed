@@ -111,8 +111,9 @@ files is the *docs_priv* directory.  github will ignore this directory.
 
 # A few more notes
 
-See the file *x.sh*.  It's the shell script that automates the running
-of Hugo.
+See the file [x.sh](https://github.com/ice-energy/jreed/blob/master/x.sh).
+It's the shell script that automates the running of Hugo.
+
 
 Note the use of the *-c* and the *-d* arguments in order to control
 source and destination directories.
@@ -124,7 +125,7 @@ Two passes are made of Hugo:
 
 There's also some code in *x.sh* to work around some broken links.
 
-My platform is linux, there'd be just a bit of work to do getting this
+My platform is *linux*, there'd be just a bit of work to do getting this
 to run on Windows.   *x.sh* might have to be turned into a .bat file.
 Haven't done that yet.    *Hugo* is supposed to run fine on Windows, but
 again, something I haven't done yet.
@@ -132,7 +133,7 @@ again, something I haven't done yet.
 Hugo should also be supported on Mac.
 
 I'd be glad to help anyone get this up and running for themselves.
-Also not too difficult to see up different themes from gohugo.io.
+Also, it's not too difficult to set up different themes from gohugo.io.
 
 
 JR
