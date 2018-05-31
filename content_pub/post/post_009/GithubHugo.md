@@ -42,6 +42,9 @@ For the *free deal*, all your repositories are public.
 
 For $99/year, repositories can be made private.
 
+I have the password, I'll give it to you if you want to host
+your repository here as well.
+
 
 # How'd you do that?
 
@@ -53,19 +56,20 @@ While Github is known as a source code repository, it is also something else:
 **Chew on that a good long time**
 
 ```
-IF( uploaded_code === properly_formatted_webite() ) THEN
+IF( uploaded_repo() === github_properly_formatted_website() ) THEN
 
-    Serve_Up_Webpages(siteURL)
+    Serve_Up_Webpages(siteURL.allow)
 
 END
 ```
 
 With proper configuration of the github repository, and proper layout
 of the data you are storing there, **github can serve up the pages**.
+WOWWW!!   Friggin' Awesome!!
 
 With Hugo installed here's the process I use for creating that website:
 
-   - edit content
+   - edit content, simple .txt file
    - Run Hugo from within a shell script, fix some things up  (all automated)
    - use git to check-in all your changes
    - use git to push to github
@@ -102,11 +106,36 @@ files is the *docs_priv* directory.  github will ignore this directory.
 
 > OK here's the deal:  *docs_priv* is it's own static site of private
   docs.   It's ultimately meant to be hosted on an Ice-Energy internal
-  website.   I need help from Software and IT to do that.
+  website.   I need help from Software and IT to enable that.
 
 
+# A few more notes
+
+See the file *x.sh*.  It's the shell script that automates the running
+of Hugo.
+
+Note the use of the *-c* and the *-d* arguments in order to control
+source and destination directories.
+
+Two passes are made of Hugo:
+
+ 1.  Creates publicly viewable directory *docs*
+ 2.  Creates non-viewable directory *docs_priv*
+
+There's also some code in *x.sh* to work around some broken links.
+
+My platform is linux, there'd be just a bit of work to do getting this
+to run on Windows.   *x.sh* might have to be turned into a .bat file.
+Haven't done that yet.    *Hugo* is supposed to run fine on Windows, but
+again, something I haven't done yet.
+
+Hugo should also be supported on Mac.
+
+I'd be glad to help anyone get this up and running for themselves.
+Also not too difficult to see up different themes from gohugo.io.
 
 
+JR
 
 
 

@@ -336,7 +336,7 @@ var bodyBgSwitchIndex = 0;
 			</h1>
 			<div class="sub header">
 					<div><span><i class="calendar outline icon"></i>May 31, 2018</span></div>
-					<div><span><i class="clock outline icon"></i>2 min read</span></div>
+					<div><span><i class="clock outline icon"></i>3 min read</span></div>
 					<div><span><i class="angle double up icon"></i>Last updated on May 31, 2018</span></div>
 			</div>
 			<hr><div class="toc"><nav id="TableOfContents">
@@ -344,6 +344,7 @@ var bodyBgSwitchIndex = 0;
 <li><a href="#we-have-a-github-account">We have a github account?</a></li>
 <li><a href="#how-d-you-do-that">How&rsquo;d you do that?</a></li>
 <li><a href="#how-do-you-keep-documents-private">How do you keep documents private?</a></li>
+<li><a href="#a-few-more-notes">A few more notes</a></li>
 </ul>
 </nav></div>
 			
@@ -383,6 +384,9 @@ For the <em>free deal</em>, all your repositories are public.</p>
 
 <p>For $99/year, repositories can be made private.</p>
 
+<p>I have the password, I&rsquo;ll give it to you if you want to host
+your repository here as well.</p>
+
 <h1 id="how-d-you-do-that">How&rsquo;d you do that?&nbsp;<a class="anchor" href="#how-d-you-do-that"><i class="small linkify icon"></i></a> </h1>
 
 <p>While Github is known as a source code repository, it is also something else:</p>
@@ -394,20 +398,21 @@ For the <em>free deal</em>, all your repositories are public.</p>
 
 <p><strong>Chew on that a good long time</strong></p>
 
-<pre><code>IF( uploaded_code === properly_formatted_webite() ) THEN
+<pre><code>IF( uploaded_repo() === github_properly_formatted_website() ) THEN
 
-    Serve_Up_Webpages(siteURL)
+    Serve_Up_Webpages(siteURL.allow)
 
 END
 </code></pre>
 
 <p>With proper configuration of the github repository, and proper layout
-of the data you are storing there, <strong>github can serve up the pages</strong>.</p>
+of the data you are storing there, <strong>github can serve up the pages</strong>.
+WOWWW!!   Friggin&rsquo; Awesome!!</p>
 
 <p>With Hugo installed here&rsquo;s the process I use for creating that website:</p>
 
 <ul>
-<li>edit content</li>
+<li>edit content, simple .txt file</li>
 <li>Run Hugo from within a shell script, fix some things up  (all automated)</li>
 <li>use git to check-in all your changes</li>
 <li>use git to push to github</li>
@@ -449,8 +454,37 @@ files is the <em>docs_priv</em> directory.  github will ignore this directory.</
 <blockquote>
 <p>OK here&rsquo;s the deal:  <em>docs_priv</em> is it&rsquo;s own static site of private
   docs.   It&rsquo;s ultimately meant to be hosted on an Ice-Energy internal
-  website.   I need help from Software and IT to do that.</p>
+  website.   I need help from Software and IT to enable that.</p>
 </blockquote>
+
+<h1 id="a-few-more-notes">A few more notes&nbsp;<a class="anchor" href="#a-few-more-notes"><i class="small linkify icon"></i></a> </h1>
+
+<p>See the file <em>x.sh</em>.  It&rsquo;s the shell script that automates the running
+of Hugo.</p>
+
+<p>Note the use of the <em>-c</em> and the <em>-d</em> arguments in order to control
+source and destination directories.</p>
+
+<p>Two passes are made of Hugo:</p>
+
+<ol>
+<li>Creates publicly viewable directory <em>docs</em></li>
+<li>Creates non-viewable directory <em>docs_priv</em></li>
+</ol>
+
+<p>There&rsquo;s also some code in <em>x.sh</em> to work around some broken links.</p>
+
+<p>My platform is linux, there&rsquo;d be just a bit of work to do getting this
+to run on Windows.   <em>x.sh</em> might have to be turned into a .bat file.
+Haven&rsquo;t done that yet.    <em>Hugo</em> is supposed to run fine on Windows, but
+again, something I haven&rsquo;t done yet.</p>
+
+<p>Hugo should also be supported on Mac.</p>
+
+<p>I&rsquo;d be glad to help anyone get this up and running for themselves.
+Also not too difficult to see up different themes from gohugo.io.</p>
+
+<p>JR</p>
 
 			</article>
 		</section>
