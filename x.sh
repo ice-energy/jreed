@@ -2,7 +2,7 @@
 
 
 rm -rf ./docs
-hugo -c "./content_pub" -d "./docs"
+hugo -c "./content_pub/content" -d "./docs"
 
 mkdir -p docs/jreed/docs/img
 
@@ -23,13 +23,13 @@ cp ./docs/img/README.txt ./docs/README.md
 # ==========================================
 #
 
-rm -rf ./docs_priv
-hugo -c "./content_priv" -d "./docs_priv"
-
-mkdir -p docs_priv/jreed/docs/img
-
-find content_priv -name cover_* -exec cp {} ./docs_priv/img            \;
-find content_priv -name cover_* -exec cp {} ./docs_priv/jreed/docs/img \;
-
-cp ./docs_priv/img/README.txt ./docs_priv/README.md
+#rm -rf ./docs_priv
+#hugo -c "./content_priv" -d "./docs_priv"
+#
+#mkdir -p docs_priv/jreed/docs/img
+#
+#find content_priv -name cover_* -exec cp {} ./docs_priv/img            \;
+#find content_priv -name cover_* -exec cp {} ./docs_priv/jreed/docs/img \;
+#
+#cp ./docs_priv/img/README.txt ./docs_priv/README.md
 
