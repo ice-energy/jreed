@@ -91,10 +91,12 @@ See the repositories at:
  - [github.com/ice-energy/user1](https://github.com/ice-energy/user1)
  - [github.com/ice-energy/user9](https://github.com/ice-energy/user9)
 
-There are 2 content directories:
+Look really close at the structure of the 2 content directories.
 
  - content_pub
  - content_priv
+
+You can see that each post has it's own seperate subdirectory, labeled as 'post_xxx'.
 
 *content_pub* is meant to have its pages publicly viewed.   The output of
 *Hugo* is the *docs* directory.
