@@ -93,8 +93,8 @@ See the repositories at:
 
 Look really close at the structure of the 2 content directories.
 
- - content_pub
- - content_priv
+ - [content_pub](https://github.com/ice-energy/jreed/tree/master/content_pub)
+ - [content_priv](https://github.com/ice-energy/jreed/tree/master/content_priv)
 
 You can see that each post has it's own seperate subdirectory, labeled as 'post_xxx'.
 
