@@ -31,7 +31,7 @@ I then activated the `virtualenv` and started entering the installation commands
 according to the instructions in the repository. Everything went on smoothly until
 the `python setup.py develop` command. I got an error as shown in the below picture.
 
-![develop failed](../img/cover_django2.png)
+![develop failed](../img/django2.png)
 
 Clearly, the error suggests that **Django v2.0.1** was being downloaded which
 **isn't supported** by **Python 2.7**. A bit of browsing led me to the conclusion

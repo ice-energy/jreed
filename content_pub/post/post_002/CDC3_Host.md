@@ -8,10 +8,8 @@ tags:
   - "linux"
 categories:
   - "Development"
-description: "This document describes the architecture of the
-*CDC3 Host Interface*, where the platform for execution is a Linux box.
-'Interface' is a physical USB connection between the Linux box and the
-CDC3 Control Processor"
+description: "The architecture of the *CDC3 Host Interface*, where the
+platform for execution is a Raspberry Pi running Linux"
 menu: main
 ---
 

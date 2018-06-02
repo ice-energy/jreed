@@ -7,7 +7,7 @@ tags:
 description: "A tutorial on how to install Mongoose OS on ESPer."
 cover: "/jreed/img/cover_esp32Mongoose.jpg"
 ---
-![Intro](../img/cover_esp32Mongoose.jpg)
+![Intro](../img/esp32Mongoose.jpg)
 
 Recently I've got my hands on the craved-for IoT **ESP32**, thanks to
 **[DFRobot](https://www.dfrobot.com)**, and have been tinkering with it ever since.
