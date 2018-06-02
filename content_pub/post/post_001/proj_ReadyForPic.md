@@ -9,7 +9,7 @@ categories:
   - "bareboards"
 menu: main
 ---
-![Intro](../img/cover_rfpic.jpg)
+![Intro](../img/rfpic.jpg)
 
 ---
 

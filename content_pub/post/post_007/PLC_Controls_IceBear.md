@@ -74,7 +74,7 @@ interface over TCP/IP, and they're fairly easy to understand and wire up.
 Automation Direct has a nice website for configuring modules together in a package.
 Here's a photo of the units necessary for interfacing with a CDC controller:
 
-![pic3](../img/cover_PLCmodules.png)  
+![pic3](../img/PLCmodules.png)  
 
 Some highlights of these modules:
 

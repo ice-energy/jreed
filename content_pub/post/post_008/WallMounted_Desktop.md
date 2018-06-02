@@ -13,7 +13,7 @@ menu: main
 
 ---
 
-![pic1](../img/cover_wallmounted.jpg)
+![pic1](../img/wallmounted.jpg)
 
 ---
 

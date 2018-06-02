@@ -15,7 +15,7 @@ CDC3 Control Processor"
 menu: main
 ---
 
-![Intro](../img/cover_CDC3Host.jpg)
+![Intro](../img/CDC3Host.jpg)
 
 ---
 

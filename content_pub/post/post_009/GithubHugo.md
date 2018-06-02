@@ -12,7 +12,7 @@ menu: main
 
 ---
 
-![pic1](../img/cover_githubhugo.jpg)
+![pic1](../img/githubhugo.jpg)
 
 ---
 
