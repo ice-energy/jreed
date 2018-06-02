@@ -6,89 +6,44 @@
     <description>Recent content in Tags on JohnnyReedProjects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 May 2018 12:19:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2018 14:28:40 +0530</lastBuildDate>
     
 	<atom:link href="https://ice-energy.github.io/jreed/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Github</title>
-      <link>https://ice-energy.github.io/jreed/tags/github/</link>
-      <pubDate>Thu, 31 May 2018 12:19:00 +0000</pubDate>
+      <title>Django</title>
+      <link>https://ice-energy.github.io/jreed/tags/django/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
       
-      <guid>https://ice-energy.github.io/jreed/tags/github/</guid>
+      <guid>https://ice-energy.github.io/jreed/tags/django/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://ice-energy.github.io/jreed/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Esp32</title>
+      <link>https://ice-energy.github.io/jreed/tags/esp32/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
       
-      <guid>https://ice-energy.github.io/jreed/tags/golang/</guid>
+      <guid>https://ice-energy.github.io/jreed/tags/esp32/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://ice-energy.github.io/jreed/tags/linux/</link>
-      <pubDate>Wed, 23 May 2018 15:52:28 -0700</pubDate>
+      <title>Google Code In</title>
+      <link>https://ice-energy.github.io/jreed/tags/google-code-in/</link>
+      <pubDate>Sat, 13 Jan 2018 10:29:23 +0530</pubDate>
       
-      <guid>https://ice-energy.github.io/jreed/tags/linux/</guid>
+      <guid>https://ice-energy.github.io/jreed/tags/google-code-in/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Modbus</title>
-      <link>https://ice-energy.github.io/jreed/tags/modbus/</link>
-      <pubDate>Fri, 25 May 2018 14:55:00 +0000</pubDate>
+      <title>Openwisp</title>
+      <link>https://ice-energy.github.io/jreed/tags/openwisp/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
       
-      <guid>https://ice-energy.github.io/jreed/tags/modbus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pic</title>
-      <link>https://ice-energy.github.io/jreed/tags/pic/</link>
-      <pubDate>Fri, 11 May 2018 21:52:28 -0700</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/pic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plc</title>
-      <link>https://ice-energy.github.io/jreed/tags/plc/</link>
-      <pubDate>Fri, 25 May 2018 14:55:00 +0000</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/plc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>https://ice-energy.github.io/jreed/tags/ubuntu/</link>
-      <pubDate>Sat, 26 May 2018 12:19:00 +0000</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zmq</title>
-      <link>https://ice-energy.github.io/jreed/tags/zmq/</link>
-      <pubDate>Wed, 23 May 2018 15:52:28 -0700</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/zmq/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zoneminder</title>
-      <link>https://ice-energy.github.io/jreed/tags/zoneminder/</link>
-      <pubDate>Sat, 26 May 2018 12:19:00 +0000</pubDate>
-      
-      <guid>https://ice-energy.github.io/jreed/tags/zoneminder/</guid>
+      <guid>https://ice-energy.github.io/jreed/tags/openwisp/</guid>
       <description></description>
     </item>
     
