@@ -98,12 +98,8 @@ See the repositories at:
 
 There are 2 content directories.  This is the Source Material of the documents.
 
- - [content_pub](https://github.com/ice-energy/jreed/tree/master/content_pub)
- - [content_priv](https://github.com/ice-energy/jreed/tree/master/content_priv)
-
-**content_pub is meant to have its pages publicly viewed**.
-
-**content_priv is meant to be private**.
+ - [content_pub](https://github.com/ice-energy/jreed/tree/master/content_pub) &nbsp; &nbsp; &nbsp;  **content_pub is meant to have its pages publicly viewed**.
+ - [content_priv](https://github.com/ice-energy/jreed/tree/master/content_priv) &nbsp; &nbsp; &nbsp; **content_priv is meant to be private**.
 
 My technique for public/private then is to generate 2 different
 sites, that are completely seperate:
@@ -114,7 +110,7 @@ sites, that are completely seperate:
 To do this requires executing Hugo twice while using the proper Source and
 Destination flags.
 
-*For the publicly visible:
+*For the publicly visible:*
 
 ```
   hugo -c "./content_pub" -d "./docs"
