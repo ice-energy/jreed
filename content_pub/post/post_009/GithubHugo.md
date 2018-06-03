@@ -114,17 +114,21 @@ sites, that are completely seperate:
 To do this requires executing Hugo twice while using the proper Source and
 Destination flags.
 
-*For the publicly visible*
+*For the publicly visible:
 
+```
   hugo -c "./content_pub" -d "./docs"
+```
 
-*To remain private*
+*To remain private:*
 
+```
   hugo -c "./content_priv" -d "./docs_priv"
+```
 
 The 2 output directories, *docs* and *docs_priv*, are both:
 
-  Standalone, static, hugo-based websites
+>  Standalone, Static, Hugo-Based Websites
 
 *docs* gets displayed by github as default.  *docs_priv* will have to
 be copied somewhere else to be displayed.

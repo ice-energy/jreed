@@ -462,17 +462,21 @@ sites, that are completely seperate:</p>
 <p>To do this requires executing Hugo twice while using the proper Source and
 Destination flags.</p>
 
-<p><em>For the publicly visible</em></p>
+<p>*For the publicly visible:</p>
 
-<p>hugo -c &ldquo;./content_pub&rdquo; -d &ldquo;./docs&rdquo;</p>
+<pre><code>  hugo -c &quot;./content_pub&quot; -d &quot;./docs&quot;
+</code></pre>
 
-<p><em>To remain private</em></p>
+<p><em>To remain private:</em></p>
 
-<p>hugo -c &ldquo;./content_priv&rdquo; -d &ldquo;./docs_priv&rdquo;</p>
+<pre><code>  hugo -c &quot;./content_priv&quot; -d &quot;./docs_priv&quot;
+</code></pre>
 
 <p>The 2 output directories, <em>docs</em> and <em>docs_priv</em>, are both:</p>
 
-<p>Standalone, static, hugo-based websites</p>
+<blockquote>
+<p>Standalone, Static, Hugo-Based Websites</p>
+</blockquote>
 
 <p><em>docs</em> gets displayed by github as default.  <em>docs_priv</em> will have to
 be copied somewhere else to be displayed.</p>
