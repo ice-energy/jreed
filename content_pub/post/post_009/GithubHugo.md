@@ -105,8 +105,6 @@ There are 2 content directories.  This is the Source Material of the documents.
 
 **content_priv is meant to be private**.
 
-Each of these directories is its own *Standalone, static, hugo-based website*.
-
 My technique for public/private then is to generate 2 different
 sites, that are completely seperate:
 
@@ -124,9 +122,12 @@ Destination flags.
 
   hugo -c "./content_priv" -d "./docs_priv"
 
+The 2 output directories, *docs* and *docs_priv*, are both:
 
+  Standalone, static, hugo-based websites
 
-
+*docs* gets displayed by github as default.  *docs_priv* will have to
+be copied somewhere else to be displayed.
 
 
 # A few more notes
