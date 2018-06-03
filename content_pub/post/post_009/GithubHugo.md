@@ -56,25 +56,29 @@ While Github is known as a source code repository, it is also something else:
 **Chew on that a good long time**
 
 ```
-IF( uploaded_repo() === github_properly_formatted_website() ) THEN
 
-    Serve_Up_Webpages(siteURL.allow)
+It's completely unprecendented to have your code repository
+ALSO serve up web-pages that happen to be stored there.
 
-END
+The key concept is that checking in your code and pushing
+the resulting git branch to the server is EQUIVALENT to publishing
+your website.
+
+It's a new paradigm, and it's really incredible.  It is
+Documentation Management on Steroids!!
+
 ```
 
 With proper configuration of the github repository, and proper layout
 of the data you are storing there, **github can serve up the pages**.
-WOWWW!!   Friggin' Awesome!!
 
-With Hugo installed here's the process I use for creating that website:
+With Hugo installed locally on my linux workstation, here's the process I use
+for creating that website:
 
    - edit content, simple .txt file
    - Run Hugo from within a shell script.  This generates the entire static site.
-   - use git to check-in all your changes
-   - use git to push to github
-   - wait a bit for changes to show up
-   - browse to site
+   - use git to check-in changes, and push to Server
+   - browse to site, wait a bit for changes to propagate
 
 
 
@@ -107,8 +111,7 @@ You can see that each post has it's own seperate subdirectory, labeled as 'post_
 files is the *docs_priv* directory.  github will ignore this directory.
 
 > OK here's the deal:  *docs_priv* is it's own static site of private
-  docs.   It's ultimately meant to be hosted on an Ice-Energy internal
-  website.   I need help from Software and IT to enable that.
+  docs.   It needs to be hosted somewhere (like internal ice-energy site, TBD)
 
 
 # A few more notes
@@ -124,8 +127,6 @@ Two passes are made of Hugo:
 
  1.  Creates publicly viewable directory *docs*
  2.  Creates non-viewable directory *docs_priv*
-
-There's also some code in *x.sh* to work around some broken links.
 
 My platform is *linux*, there'd be just a bit of work to do getting this
 to run on Windows.   *x.sh* might have to be turned into a .bat file.

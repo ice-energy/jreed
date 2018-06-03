@@ -398,26 +398,30 @@ your repository here as well.</p>
 
 <p><strong>Chew on that a good long time</strong></p>
 
-<pre><code>IF( uploaded_repo() === github_properly_formatted_website() ) THEN
+<pre><code>
+It's completely unprecendented to have your code repository
+ALSO serve up web-pages that happen to be stored there.
 
-    Serve_Up_Webpages(siteURL.allow)
+The key concept is that checking in your code and pushing
+the resulting git branch to the server is EQUIVALENT to publishing
+your website.
 
-END
+It's a new paradigm, and it's really incredible.  It is
+Documentation Management on Steroids!!
+
 </code></pre>
 
 <p>With proper configuration of the github repository, and proper layout
-of the data you are storing there, <strong>github can serve up the pages</strong>.
-WOWWW!!   Friggin&rsquo; Awesome!!</p>
+of the data you are storing there, <strong>github can serve up the pages</strong>.</p>
 
-<p>With Hugo installed here&rsquo;s the process I use for creating that website:</p>
+<p>With Hugo installed locally on my linux workstation, here&rsquo;s the process I use
+for creating that website:</p>
 
 <ul>
 <li>edit content, simple .txt file</li>
 <li>Run Hugo from within a shell script.  This generates the entire static site.</li>
-<li>use git to check-in all your changes</li>
-<li>use git to push to github</li>
-<li>wait a bit for changes to show up</li>
-<li>browse to site</li>
+<li>use git to check-in changes, and push to Server</li>
+<li>browse to site, wait a bit for changes to propagate</li>
 </ul>
 
 <h1 id="how-do-you-keep-documents-private">How do you keep documents private?&nbsp;<a class="anchor" href="#how-do-you-keep-documents-private"><i class="small linkify icon"></i></a> </h1>
@@ -455,8 +459,7 @@ files is the <em>docs_priv</em> directory.  github will ignore this directory.</
 
 <blockquote>
 <p>OK here&rsquo;s the deal:  <em>docs_priv</em> is it&rsquo;s own static site of private
-  docs.   It&rsquo;s ultimately meant to be hosted on an Ice-Energy internal
-  website.   I need help from Software and IT to enable that.</p>
+  docs.   It needs to be hosted somewhere (like internal ice-energy site, TBD)</p>
 </blockquote>
 
 <h1 id="a-few-more-notes">A few more notes&nbsp;<a class="anchor" href="#a-few-more-notes"><i class="small linkify icon"></i></a> </h1>
@@ -473,8 +476,6 @@ source and destination directories.</p>
 <li>Creates publicly viewable directory <em>docs</em></li>
 <li>Creates non-viewable directory <em>docs_priv</em></li>
 </ol>
-
-<p>There&rsquo;s also some code in <em>x.sh</em> to work around some broken links.</p>
 
 <p>My platform is <em>linux</em>, there&rsquo;d be just a bit of work to do getting this
 to run on Windows.   <em>x.sh</em> might have to be turned into a .bat file.
