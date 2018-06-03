@@ -85,9 +85,10 @@ for creating that website:
 # How do you keep documents private?
 
 1st of all, pay the $99 fee.   That means the repositories are private, but the
-pages are not.    Pages can still be seen.
+website pages are not.    The key is knowing where the publicly
+browsable files are, and not putting private documents there.
 
-I have a solution to this, and it's mainly built into the source code tree.
+The solution to pub/priv relies on a logical arrangement of the source code tree.
 
 See the repositories at:
 
@@ -95,23 +96,37 @@ See the repositories at:
  - [github.com/ice-energy/user1](https://github.com/ice-energy/user1)
  - [github.com/ice-energy/user9](https://github.com/ice-energy/user9)
 
-Look really close at the structure of the 2 content directories.
+There are 2 content directories.  This is the Source Material of the documents.
 
  - [content_pub](https://github.com/ice-energy/jreed/tree/master/content_pub)
  - [content_priv](https://github.com/ice-energy/jreed/tree/master/content_priv)
 
-You can see that each post has it's own seperate subdirectory, labeled as 'post_xxx'.
+**content_pub is meant to have its pages publicly viewed**.
 
-*content_pub* is meant to have its pages publicly viewed.   The output of
-*Hugo* is the *docs* directory.
+**content_priv is meant to be private**.
 
-    *docs* is the directory that github looks for to display pages.
+Each of these directories is its own *Standalone, static, hugo-based website*.
 
-*content_priv* is meant to be private.   The output of Hugo for the priv
-files is the *docs_priv* directory.  github will ignore this directory.
+My technique for public/private then is to generate 2 different
+sites, that are completely seperate:
 
-> OK here's the deal:  *docs_priv* is it's own static site of private
-  docs.   It needs to be hosted somewhere (like internal ice-energy site, TBD)
+   - One meant for public viewing on github
+   - The 2nd one stored on github, **But must be copied somewhere else to be displayed**
+
+To do this requires executing Hugo twice while using the proper Source and
+Destination flags.
+
+*For the publicly visible*
+
+  hugo -c "./content_pub" -d "./docs"
+
+*To remain private*
+
+  hugo -c "./content_priv" -d "./docs_priv"
+
+
+
+
 
 
 # A few more notes
@@ -119,14 +134,6 @@ files is the *docs_priv* directory.  github will ignore this directory.
 See the file [x.sh](https://github.com/ice-energy/jreed/blob/master/x.sh).
 It's the shell script that automates the running of Hugo.
 
-
-Note the use of the *-c* and the *-d* arguments in order to control
-source and destination directories.
-
-Two passes are made of Hugo:
-
- 1.  Creates publicly viewable directory *docs*
- 2.  Creates non-viewable directory *docs_priv*
 
 My platform is *linux*, there'd be just a bit of work to do getting this
 to run on Windows.   *x.sh* might have to be turned into a .bat file.

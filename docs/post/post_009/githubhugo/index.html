@@ -427,9 +427,10 @@ for creating that website:</p>
 <h1 id="how-do-you-keep-documents-private">How do you keep documents private?&nbsp;<a class="anchor" href="#how-do-you-keep-documents-private"><i class="small linkify icon"></i></a> </h1>
 
 <p>1st of all, pay the $99 fee.   That means the repositories are private, but the
-pages are not.    Pages can still be seen.</p>
+website pages are not.    The key is knowing where the publicly
+browsable files are, and not putting private documents there.</p>
 
-<p>I have a solution to this, and it&rsquo;s mainly built into the source code tree.</p>
+<p>The solution to pub/priv relies on a logical arrangement of the source code tree.</p>
 
 <p>See the repositories at:</p>
 
@@ -439,43 +440,42 @@ pages are not.    Pages can still be seen.</p>
 <li><a href="https://github.com/ice-energy/user9">github.com/ice-energy/user9</a></li>
 </ul>
 
-<p>Look really close at the structure of the 2 content directories.</p>
+<p>There are 2 content directories.  This is the Source Material of the documents.</p>
 
 <ul>
 <li><a href="https://github.com/ice-energy/jreed/tree/master/content_pub">content_pub</a></li>
 <li><a href="https://github.com/ice-energy/jreed/tree/master/content_priv">content_priv</a></li>
 </ul>
 
-<p>You can see that each post has it&rsquo;s own seperate subdirectory, labeled as &lsquo;post_xxx&rsquo;.</p>
+<p><strong>content_pub is meant to have its pages publicly viewed</strong>.</p>
 
-<p><em>content_pub</em> is meant to have its pages publicly viewed.   The output of
-<em>Hugo</em> is the <em>docs</em> directory.</p>
+<p><strong>content_priv is meant to be private</strong>.</p>
 
-<pre><code>*docs* is the directory that github looks for to display pages.
-</code></pre>
+<p>Each of these directories is its own <em>Standalone, static, hugo-based website</em>.</p>
 
-<p><em>content_priv</em> is meant to be private.   The output of Hugo for the priv
-files is the <em>docs_priv</em> directory.  github will ignore this directory.</p>
+<p>My technique for public/private then is to generate 2 different
+sites, that are completely seperate:</p>
 
-<blockquote>
-<p>OK here&rsquo;s the deal:  <em>docs_priv</em> is it&rsquo;s own static site of private
-  docs.   It needs to be hosted somewhere (like internal ice-energy site, TBD)</p>
-</blockquote>
+<ul>
+<li>One meant for public viewing on github</li>
+<li>The 2nd one stored on github, <strong>But must be copied somewhere else to be displayed</strong></li>
+</ul>
+
+<p>To do this requires executing Hugo twice while using the proper Source and
+Destination flags.</p>
+
+<p><em>For the publicly visible</em></p>
+
+<p>hugo -c &ldquo;./content_pub&rdquo; -d &ldquo;./docs&rdquo;</p>
+
+<p><em>To remain private</em></p>
+
+<p>hugo -c &ldquo;./content_priv&rdquo; -d &ldquo;./docs_priv&rdquo;</p>
 
 <h1 id="a-few-more-notes">A few more notes&nbsp;<a class="anchor" href="#a-few-more-notes"><i class="small linkify icon"></i></a> </h1>
 
 <p>See the file <a href="https://github.com/ice-energy/jreed/blob/master/x.sh">x.sh</a>.
 It&rsquo;s the shell script that automates the running of Hugo.</p>
-
-<p>Note the use of the <em>-c</em> and the <em>-d</em> arguments in order to control
-source and destination directories.</p>
-
-<p>Two passes are made of Hugo:</p>
-
-<ol>
-<li>Creates publicly viewable directory <em>docs</em></li>
-<li>Creates non-viewable directory <em>docs_priv</em></li>
-</ol>
 
 <p>My platform is <em>linux</em>, there&rsquo;d be just a bit of work to do getting this
 to run on Windows.   <em>x.sh</em> might have to be turned into a .bat file.
