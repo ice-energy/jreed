@@ -64,8 +64,8 @@ The key concept is that checking in your code and pushing
 the resulting git branch to the server is EQUIVALENT to publishing
 your website.
 
-It's a new paradigm, and it's really incredible.  It is
-Documentation Management on Steroids!!
+It's a new paradigm, and it's really incredible.  It makes
+Documentation Management incredibly easy!
 
 ```
 
@@ -96,7 +96,8 @@ See the repositories at:
  - [github.com/ice-energy/user1](https://github.com/ice-energy/user1)
  - [github.com/ice-energy/user9](https://github.com/ice-energy/user9)
 
-There are 2 content directories.  This is the Source Material of the documents.
+Each of those repo's have 2 content directories, which are the *Source Material* of
+the documents.
 
  - [content_pub](https://github.com/ice-energy/jreed/tree/master/content_pub) &nbsp; &nbsp; &nbsp;  publicly browsable content.
  - [content_priv](https://github.com/ice-energy/jreed/tree/master/content_priv) &nbsp; &nbsp; &nbsp; private content, not to be displayed on github.
