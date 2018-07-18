@@ -31,7 +31,7 @@ standard way, and it's all one big happy (common) network.    The key
 thing is that the usual discovery tools will find all CDC boards that
 are up and connected.
 
-> *Also note this configuration works with WiFi-to-WiFi connections*
+> *Also note this SAME EXACT configuration works with WiFi-to-WiFi connections*
 
 ---
 
@@ -110,6 +110,67 @@ Step 2.  Change the Band to 2GHz-B/G/N
 Step 3.  Change country to United States
 
 Step 4.  Hit Apply.   Re-connect if winbox loses communications with the unit.
+
+---
+
+# Add WiFi Password
+
+
+![pic5](../img/papa3.png)
+
+
+Choose 'WPA2' as the Security Type.
+
+Enter the WiFi Password, then click on Apply
+
+---
+
+# Configure as Bridge
+
+
+![pic6](../img/papa4.png)
+
+For Mode, select 'Bridge'
+
+Address Acquisition is 'Automatic'
+
+Address Source is 'Any'
+
+Change the Router Identity to the same as 'Network Name'.  This will
+be the name that shows up in the DHCP clients' table on the router.
+
+*Click Apply*.   Almost done.
+
+
+# Enter Password for Router
+
+![pic7](../img/papa5.png)
+
+Note this is not the WiFi password: this is the Password that allows you
+to edit this configuration.
+
+*Enter the Secret Password*.  You should know what it is.
+
+*Hit Apply*.
+
+You're done.    You can hit 'OK', and exit out of Winbox.
+
+
+ > Your PapaBear Router should be configured.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
