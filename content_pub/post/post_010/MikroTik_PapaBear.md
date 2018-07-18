@@ -141,6 +141,7 @@ be the name that shows up in the DHCP clients' table on the router.
 
 *Click Apply*.   Almost done.
 
+---
 
 # Enter Password for Router
 
