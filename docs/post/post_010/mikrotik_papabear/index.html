@@ -363,6 +363,8 @@ var bodyBgSwitchIndex = 0;
 <li><a href="#quick-summary">Quick Summary</a></li>
 <li><a href="#install-winbox">Install &lsquo;Winbox&rsquo;</a></li>
 <li><a href="#start-with-a-knows-router-configuration">Start with a knows Router Configuration</a></li>
+<li><a href="#initial-connections">Initial Connections</a></li>
+<li><a href="#use-winbox-to-discover-and-connect">Use Winbox to Discover and Connect</a></li>
 </ul>
 </nav></div>
 			
@@ -389,13 +391,17 @@ standard way, and it&rsquo;s all one big happy (common) network.    The key
 thing is that the usual discovery tools will find all CDC boards that
 are up and connected.</p>
 
+<blockquote>
+<p><em>Also note this configuration works with WiFi-to-WiFi connections</em></p>
+</blockquote>
+
 <hr />
 
 <h1 id="install-winbox">Install &lsquo;Winbox&rsquo;&nbsp;<a class="anchor" href="#install-winbox"><i class="small linkify icon"></i></a> </h1>
 
 <p>Winbox is a configuration tool from MikroTik.</p>
 
-<p><a href="[https://mikrotik.com/download]">https://mikrotik.com/download</a></p>
+<p><a href="https://mikrotik.com/download">https://mikrotik.com/download</a></p>
 
 <p>Up towards the top of that page, <em>click on the &lsquo;Winbox&rsquo; button</em>, which is really
 a drop-down.  When it drops down, the version of Winbox will be shown.  At the
@@ -417,6 +423,28 @@ then move it to the Desktop for easy access.</p>
 </ul>
 
 <hr />
+
+<h1 id="initial-connections">Initial Connections&nbsp;<a class="anchor" href="#initial-connections"><i class="small linkify icon"></i></a> </h1>
+
+<p><em>Plug the ethernet of the MikroTik in to your existing network.</em></p>
+
+<p>Plug into an existing port on your switch or your router.
+The discovery of the MikroTik device seems to work better when it is plugged in.</p>
+
+<p>You could also plug the ethernet direct in to your PC.  I have verified
+it works too.</p>
+
+<h1 id="use-winbox-to-discover-and-connect">Use Winbox to Discover and Connect&nbsp;<a class="anchor" href="#use-winbox-to-discover-and-connect"><i class="small linkify icon"></i></a> </h1>
+
+<p><em>Double-Click on Winbox</em>, and let it run.    Click on the &lsquo;Neighbors&rsquo; tab, and
+the MikroTik should be discovered:</p>
+
+<p><img src="../img/papa1.jpg" alt="pic2" /></p>
+
+<p>It should self-discover.   Hit &lsquo;refresh&rsquo; a few times if you don&rsquo;t see it.</p>
+
+<p>Once it shows, <em>Single Click</em> on that entry to Highlight it,
+<em>then hit &lsquo;Connect&rsquo;</em>.</p>
 
 			</article>
 		</section>

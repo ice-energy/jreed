@@ -31,13 +31,15 @@ standard way, and it's all one big happy (common) network.    The key
 thing is that the usual discovery tools will find all CDC boards that
 are up and connected.
 
+> *Also note this configuration works with WiFi-to-WiFi connections*
+
 ---
 
 # Install 'Winbox'
 
 Winbox is a configuration tool from MikroTik.
 
-[https://mikrotik.com/download]([https://mikrotik.com/download])
+[https://mikrotik.com/download](https://mikrotik.com/download)
 
 Up towards the top of that page, *click on the 'Winbox' button*, which is really
 a drop-down.  When it drops down, the version of Winbox will be shown.  At the
@@ -57,6 +59,30 @@ Here are the steps:
  - Wait about 15 seconds.    Good to go.
 
 ---
+
+# Initial Connections
+
+*Plug the ethernet of the MikroTik in to your existing network.*
+
+Plug into an existing port on your switch or your router.
+The discovery of the MikroTik device seems to work better when it is plugged in.
+
+You could also plug the ethernet direct in to your PC.  I have verified
+it works too.
+
+# Use Winbox to Discover and Connect
+
+*Double-Click on Winbox*, and let it run.    Click on the 'Neighbors' tab, and
+the MikroTik should be discovered:
+
+![pic2](../img/papa1.jpg)
+
+It should self-discover.   Hit 'refresh' a few times if you don't see it.
+
+Once it shows, *Single Click* on that entry to Highlight it,
+*then hit 'Connect'*.
+
+
 
 
 
