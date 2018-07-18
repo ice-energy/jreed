@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mikrotik on JohnnyReedProjects</title>
+    <link>https://ice-energy.github.io/jreed/tags/mikrotik/</link>
+    <description>Recent content in Mikrotik on JohnnyReedProjects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Jul 2018 12:19:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ice-energy.github.io/jreed/tags/mikrotik/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MikroTik PapaBear Configuration</title>
+      <link>https://ice-energy.github.io/jreed/post/post_010/mikrotik_papabear/</link>
+      <pubDate>Wed, 18 Jul 2018 12:19:00 +0000</pubDate>
+      
+      <guid>https://ice-energy.github.io/jreed/post/post_010/mikrotik_papabear/</guid>
+      <description>Quick Summary This document has a series of screenshots along with explanations, that will walk you through an example of setting up a MikroTik as the PapaBear Master.
+The basic config strategy is: Wisp AP/Bridged.
+Translation: it&amp;rsquo;s an WiFi Access Point to an existing network, where all the traffic is bridged to the existing router.
+In practice then, users can connect to this Access Point in the standard way, and it&amp;rsquo;s all one big happy (common) network.</description>
+    </item>
+    
+  </channel>
+</rss>
