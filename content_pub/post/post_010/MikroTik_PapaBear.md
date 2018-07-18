@@ -48,7 +48,7 @@ then move it to the Desktop for easy access.
 
 ---
 
-# Start with a knows Router Configuration
+# Start with a known Router Configuration
 
 Here are the steps:
 
@@ -70,20 +70,46 @@ The discovery of the MikroTik device seems to work better when it is plugged in.
 You could also plug the ethernet direct in to your PC.  I have verified
 it works too.
 
+---
+
 # Use Winbox to Discover and Connect
 
 *Double-Click on Winbox*, and let it run.    Click on the 'Neighbors' tab, and
 the MikroTik should be discovered:
 
-![pic2](../img/papa1.jpg)
+![pic2](../img/papa1.png)
 
 It should self-discover.   Hit 'refresh' a few times if you don't see it.
 
 Once it shows, *Single Click* on that entry to Highlight it,
 *then hit 'Connect'*.
 
+---
 
+# Screen for the 1st connection
 
+![pic3](../img/rpic2.png)
+
+---
+
+# Click on 'Quick Set' to start the Configuration
+
+![pic4](../img/rpic3.png)
+
+---
+
+# Change Name, Country, and Band
+
+![pic5](../img/papa2.png)
+
+Step 1.  Change the Network Name to PapaBear_something.   Where 'something' could
+be the last 4 digits of the MAC.
+
+Step 2.  Change the Band to 2GHz-B/G/N
+
+Step 3.  Change country to United States
+
+Step 4.  Hit Apply.   Re-connect if winbox loses communications with the unit.
 
 
 
