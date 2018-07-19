@@ -353,7 +353,7 @@ var bodyBgSwitchIndex = 0;
 			</h1>
 			<div class="sub header">
 					<div><span><i class="calendar outline icon"></i>May 25, 2018</span></div>
-					<div><span><i class="clock outline icon"></i>5 min read</span></div>
+					<div><span><i class="clock outline icon"></i>6 min read</span></div>
 					<div><span><i class="angle double up icon"></i>Last updated on May 25, 2018</span></div>
 			</div>
 			<hr><div class="toc"><nav id="TableOfContents">
@@ -375,6 +375,8 @@ var bodyBgSwitchIndex = 0;
 </ul></li>
 <li><a href="#modbus-client-windows">Modbus Client, Windows</a></li>
 <li><a href="#modbus-client-linux">Modbus Client, Linux</a></li>
+<li><a href="#closeup-pic-plc-wiring">Closeup PIC, PLC Wiring</a></li>
+<li><a href="#wiring-and-configuration-instructions-with-the-cdc">Wiring and Configuration instructions with the CDC</a></li>
 </ul>
 </nav></div>
 			
@@ -621,6 +623,89 @@ void main( void )
 <p>Here&rsquo;s link to full source code: <a href="../img/xmodbus.c">xmodbus.c</a></p>
 
 <hr />
+
+<h1 id="closeup-pic-plc-wiring">Closeup PIC, PLC Wiring&nbsp;<a class="anchor" href="#closeup-pic-plc-wiring"><i class="small linkify icon"></i></a> </h1>
+
+<p>&nbsp; <br></p>
+
+<p><img src="../img/plc_closeup_wiring_pic.jpg" alt="pic6" /></p>
+
+<p>&nbsp; <br></p>
+
+<h1 id="wiring-and-configuration-instructions-with-the-cdc">Wiring and Configuration instructions with the CDC&nbsp;<a class="anchor" href="#wiring-and-configuration-instructions-with-the-cdc"><i class="small linkify icon"></i></a> </h1>
+
+<p>&nbsp; <br></p>
+
+<pre><code>There are 2 Cables:
+
+  - Cable #1 has only 6 wires.  It has the 2 brown wires wrapped around the cable.
+                                All wires land on the connector for 'Analog Outputs'
+
+
+  - Cable #2 uses all 8 wires.  2 wires land on connector 'Digital Outputs 0-5 DC'
+                                6 wires land on connector 'Digital Inputs 0-5V DC'
+                                   (assumes the GND wire lands on Digital Inputs)
+
+
+  Cable #1      Analog Outputs
+----------------------------------
+
+  Orange Solid    A02 - Top                SystemCapacity
+  Orange Stripe   A02 - Bottom
+
+  Blue Solid      A03 - Top                Unit Active Power
+  Blue Stripe     A03 - Bottom
+
+  Green Solid     A04 - Top                Tank Water Temp
+  Green Stripe    A04 - Bottom
+
+  Browns = NC
+
+
+  Cable #2      GPIO inputs + GPIO outputs
+----------------------------------------------
+
+  Orange Stripe  = Ground
+  Brown Stripe   = 5v
+
+  Blue Stripe    = Digital Output #3            ChargeStatus
+  Green Stripe   = Digital Output #4            FaultStatus
+
+  Green Solid    = Digital Input #3             ForceMake
+  Orange Solid   = Digital Input #4             ForceMelt
+  Brown Solid    = Digital Input #1             SystemOff
+  Blue Solid     = Digital Input #2             Bypass
+
+
+
+ Configuration Items
+-----------------------------
+
+  There are 3 items to change in the configuration:
+
+       1.    Add 'SystemCap' to DAC_CHANNELS A02
+       2.    Add 'UActivePow' to DAC_CHANNELS A03
+       3.    Add 'ChargeStatus' to GPIO_OUTPUTS_5v_Digital, Port 3
+
+
+    DAC_CHANNELS = {
+        SilkScreen_name = &quot;Analog Outputs&quot;,
+        { Line = &quot;A01&quot;, Name = &quot;RPumpV&quot;, Enbl = &quot;yes&quot;},          (NC)
+        { Line = &quot;A02&quot;, Name = &quot;SystemCap&quot;, Enbl = &quot;yes&quot;},       (Change)
+        { Line = &quot;A03&quot;, Name = &quot;UActivePow&quot;, Enbl = &quot;yes&quot;},      (Change)
+        { Line = &quot;A04&quot;, Name = &quot;none&quot;, Enbl = &quot;no&quot;},             (NC)
+    },
+
+
+    GPIO_OUTPUTS_5v_Digital = {
+        SilkScreen_name = &quot;Digital Outputs 0-5 DC&quot;,
+        { BF = &quot;PH12&quot;, Line = &quot;DO1&quot;, Name = &quot;I0.RPd2&quot;, Enbl=&quot;yes&quot;},         (NC)
+        { BF = &quot;PH13&quot;, Line = &quot;DO2&quot;, Name = &quot;none&quot;, Enbl=&quot;no&quot;},             (NC)
+        { BF = &quot;PH14&quot;, Line = &quot;DO3&quot;, Name = &quot;ChargeStatus&quot;, Enbl=&quot;yes&quot;},    (Change)
+        { BF = &quot;PH15&quot;, Line = &quot;DO4&quot;, Name = &quot;none&quot;, Enbl=&quot;no&quot;},             (NC)
+    },
+
+</code></pre>
 
 			</article>
 		</section>

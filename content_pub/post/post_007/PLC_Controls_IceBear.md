@@ -257,6 +257,90 @@ Here's link to full source code: [xmodbus.c](../img/xmodbus.c)
 ---
 
 
+# Closeup PIC, PLC Wiring
+
+&nbsp; <br>
+
+![pic6](../img/plc_closeup_wiring_pic.jpg)
+
+&nbsp; <br>
+
+
+# Wiring and Configuration instructions with the CDC
+
+&nbsp; <br>
+
+```
+There are 2 Cables:
+
+  - Cable #1 has only 6 wires.  It has the 2 brown wires wrapped around the cable.
+                                All wires land on the connector for 'Analog Outputs'
+
+
+  - Cable #2 uses all 8 wires.  2 wires land on connector 'Digital Outputs 0-5 DC'
+                                6 wires land on connector 'Digital Inputs 0-5V DC'
+                                   (assumes the GND wire lands on Digital Inputs)
+
+
+  Cable #1      Analog Outputs
+----------------------------------
+
+  Orange Solid    A02 - Top                SystemCapacity
+  Orange Stripe   A02 - Bottom
+
+  Blue Solid      A03 - Top                Unit Active Power
+  Blue Stripe     A03 - Bottom
+
+  Green Solid     A04 - Top                Tank Water Temp
+  Green Stripe    A04 - Bottom
+
+  Browns = NC
+
+
+  Cable #2      GPIO inputs + GPIO outputs
+----------------------------------------------
+
+  Orange Stripe  = Ground
+  Brown Stripe   = 5v
+
+  Blue Stripe    = Digital Output #3            ChargeStatus
+  Green Stripe   = Digital Output #4            FaultStatus
+
+  Green Solid    = Digital Input #3             ForceMake
+  Orange Solid   = Digital Input #4             ForceMelt
+  Brown Solid    = Digital Input #1             SystemOff
+  Blue Solid     = Digital Input #2             Bypass
+
+
+
+ Configuration Items
+-----------------------------
+
+  There are 3 items to change in the configuration:
+
+       1.    Add 'SystemCap' to DAC_CHANNELS A02
+       2.    Add 'UActivePow' to DAC_CHANNELS A03
+       3.    Add 'ChargeStatus' to GPIO_OUTPUTS_5v_Digital, Port 3
+
+
+    DAC_CHANNELS = {
+        SilkScreen_name = "Analog Outputs",
+        { Line = "A01", Name = "RPumpV", Enbl = "yes"},          (NC)
+        { Line = "A02", Name = "SystemCap", Enbl = "yes"},       (Change)
+        { Line = "A03", Name = "UActivePow", Enbl = "yes"},      (Change)
+        { Line = "A04", Name = "none", Enbl = "no"},             (NC)
+    },
+
+
+    GPIO_OUTPUTS_5v_Digital = {
+        SilkScreen_name = "Digital Outputs 0-5 DC",
+        { BF = "PH12", Line = "DO1", Name = "I0.RPd2", Enbl="yes"},         (NC)
+        { BF = "PH13", Line = "DO2", Name = "none", Enbl="no"},             (NC)
+        { BF = "PH14", Line = "DO3", Name = "ChargeStatus", Enbl="yes"},    (Change)
+        { BF = "PH15", Line = "DO4", Name = "none", Enbl="no"},             (NC)
+    },
+
+```
 
 
 
