@@ -265,6 +265,7 @@ Here's link to full source code: [xmodbus.c](../img/xmodbus.c)
 
 &nbsp; <br>
 
+---
 
 # Wiring and Configuration instructions with the CDC
 
