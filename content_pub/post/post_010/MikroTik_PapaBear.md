@@ -23,7 +23,7 @@ walk you through an example of setting up a MikroTik as the PapaBear Master.
 
 The basic config strategy is:  **Wisp AP/Bridged**.
 
-Translation: it's an WiFi Access Point to an existing network,
+Translation: it's a WiFi Access Point to an existing network,
 where all the traffic is bridged to the existing router.
 
 In practice then, users can connect to this Access Point in the

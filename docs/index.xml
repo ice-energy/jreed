@@ -19,7 +19,7 @@
       <guid>https://ice-energy.github.io/jreed/post/post_010/mikrotik_papabear/</guid>
       <description>Quick Summary This document has a series of screenshots along with explanations, that will walk you through an example of setting up a MikroTik as the PapaBear Master.
 The basic config strategy is: Wisp AP/Bridged.
-Translation: it&amp;rsquo;s an WiFi Access Point to an existing network, where all the traffic is bridged to the existing router.
+Translation: it&amp;rsquo;s a WiFi Access Point to an existing network, where all the traffic is bridged to the existing router.
 In practice then, users can connect to this Access Point in the standard way, and it&amp;rsquo;s all one big happy (common) network.</description>
     </item>
     
