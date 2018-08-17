@@ -16,17 +16,20 @@ body, body.pushable {
 }
 
 </style><title>
-Proj_Ready_For_Pic
+MikroTik Client Configuration
 </title><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="John Reed" />
-	<meta name="description" content="Hello World Random Random Random" />
+	<meta name="description" content="Quick Summary This document has a series of screenshots along with explanations, that will walk you through an example of setting up a MikroTik as the Client.
+The basic config strategy is: CPE. CPE is an abbreviation for Customer Premises Equipment.
+Translation: it&amp;rsquo;s a WiFi Bridge to a Wireless Access Point.
+The WiFi Bridge is a substitute for a wired connection. A setup like this can be used instead of physically running ethernet cable." />
 <meta name="generator" content="Hugo 0.46" />
 
 <link rel="shortcut icon" href="img/defaultFav.ico">
 
-<link rel="canonical" href="https://ice-energy.github.io/jreed/post/post_001/proj_readyforpic/" />
+<link rel="canonical" href="https://ice-energy.github.io/jreed/post/post_011/mikrotik_client/" />
 <link rel="alternative" href="/jreed/index.xml" title="JohnnyReedProjects" type="application/atom+xml"/>
 <link rel="stylesheet" type="text/css" href="/jreed/css/semantic_2.3.1.min.css">
 <style>
@@ -362,19 +365,26 @@ var bodyBgSwitchIndex = 0;
 	<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
 		<section class="ui secondary top attached black segment post-head">
 			<h1 class="post-title">
-				Proj_Ready_For_Pic
+				MikroTik Client Configuration
 			</h1>
 			<div class="sub header">
-					<div><span><i class="calendar outline icon"></i>May 11, 2018</span></div>
-					<div><span><i class="clock outline icon"></i>1 min read</span></div>
-					<div><span><i class="angle double up icon"></i>Last updated on May 11, 2018</span></div>
+					<div><span><i class="calendar outline icon"></i>Aug 17, 2018</span></div>
+					<div><span><i class="clock outline icon"></i>3 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Aug 17, 2018</span></div>
 			</div>
 			<hr><div class="toc"><nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li><a href="#hello-world">Hello World</a></li>
-</ul></li>
+<li><a href="#quick-summary">Quick Summary</a></li>
+<li><a href="#install-winbox">Install &lsquo;Winbox&rsquo;</a></li>
+<li><a href="#start-with-a-known-router-configuration">Start with a known Router Configuration</a></li>
+<li><a href="#initial-connections">Initial Connections</a></li>
+<li><a href="#use-winbox-to-discover-and-connect">Use Winbox to Discover and Connect</a></li>
+<li><a href="#screen-for-the-1st-connection">Screen for the 1st connection</a></li>
+<li><a href="#click-on-quick-set-to-start-the-configuration">Click on &lsquo;Quick Set&rsquo; to start the Configuration</a></li>
+<li><a href="#change-name-country-and-band">Change Name, Country, and Band</a></li>
+<li><a href="#add-wifi-password">Add WiFi Password</a></li>
+<li><a href="#configure-as-bridge">Configure as Bridge</a></li>
+<li><a href="#enter-password-for-router">Enter Password for Router</a></li>
 </ul>
 </nav></div>
 			
@@ -382,17 +392,147 @@ var bodyBgSwitchIndex = 0;
 			<article class="post-content twemoji">
 				
 
-<p><img src="../img/rfpic.jpg" alt="Intro" /></p>
+<p><img src="../img/MikroTikClient.jpg" alt="pic1" /></p>
 
 <hr />
 
-<h2 id="hello-world">Hello World&nbsp;<a class="anchor" href="#hello-world"><i class="small linkify icon"></i></a> </h2>
+<h1 id="quick-summary">Quick Summary&nbsp;<a class="anchor" href="#quick-summary"><i class="small linkify icon"></i></a> </h1>
 
-<p>Random
-<br>
-Random
-<br>
-Random</p>
+<p>This document has a series of screenshots along with explanations, that will
+walk you through an example of setting up a MikroTik as the Client.</p>
+
+<p>The basic config strategy is:  <strong>CPE</strong>.   CPE is an abbreviation for Customer Premises Equipment.</p>
+
+<p>Translation: it&rsquo;s a WiFi Bridge to a Wireless Access Point.</p>
+
+<p>The WiFi Bridge is a substitute for a wired connection.  A setup like this can
+be used instead of physically running ethernet cable.</p>
+
+<hr />
+
+<h1 id="install-winbox">Install &lsquo;Winbox&rsquo;&nbsp;<a class="anchor" href="#install-winbox"><i class="small linkify icon"></i></a> </h1>
+
+<p>Winbox is a configuration tool from MikroTik.</p>
+
+<p><a href="https://mikrotik.com/download">https://mikrotik.com/download</a></p>
+
+<p>Up towards the top of that page, <em>click on the &lsquo;Winbox&rsquo; button</em>, which is really
+a drop-down.  When it drops down, the version of Winbox will be shown.  At the
+writing of this document, the version was 3.16.   <em>Click on it</em>, let it download,
+then move it to the Desktop for easy access.</p>
+
+<hr />
+
+<h1 id="start-with-a-known-router-configuration">Start with a known Router Configuration&nbsp;<a class="anchor" href="#start-with-a-known-router-configuration"><i class="small linkify icon"></i></a> </h1>
+
+<p>Here are the steps:</p>
+
+<ul>
+<li>Start with MikroTik not powered</li>
+<li>Get a small screwdriver or similar, use it to hold down the Reset button</li>
+<li>With reset held down, power on the MikroTik (you need 3 hands!)</li>
+<li>When Leds start to Blink (watch for them), release the Reset button</li>
+<li>Wait about 15 seconds.    Good to go.</li>
+</ul>
+
+<hr />
+
+<h1 id="initial-connections">Initial Connections&nbsp;<a class="anchor" href="#initial-connections"><i class="small linkify icon"></i></a> </h1>
+
+<p><em>Plug the ethernet of the MikroTik in to your existing network.</em></p>
+
+<p>Plug into an existing port on your switch or your router.
+The discovery of the MikroTik device seems to work better when it is plugged in.</p>
+
+<p>You could also plug the ethernet direct in to your PC.  I have verified
+it works too.</p>
+
+<hr />
+
+<h1 id="use-winbox-to-discover-and-connect">Use Winbox to Discover and Connect&nbsp;<a class="anchor" href="#use-winbox-to-discover-and-connect"><i class="small linkify icon"></i></a> </h1>
+
+<p><em>Double-Click on Winbox</em>, and let it run.    Click on the &lsquo;Neighbors&rsquo; tab, and
+the MikroTik should be discovered:</p>
+
+<p><img src="../img/papa1.png" alt="pic2" /></p>
+
+<p>It should self-discover.   Hit &lsquo;refresh&rsquo; a few times if you don&rsquo;t see it.</p>
+
+<p>Once it shows, <em>Single Click</em> on that entry to Highlight it,
+<em>then hit &lsquo;Connect&rsquo;</em>.</p>
+
+<hr />
+
+<h1 id="screen-for-the-1st-connection">Screen for the 1st connection&nbsp;<a class="anchor" href="#screen-for-the-1st-connection"><i class="small linkify icon"></i></a> </h1>
+
+<p><img src="../img/rpic2.png" alt="pic3" /></p>
+
+<hr />
+
+<h1 id="click-on-quick-set-to-start-the-configuration">Click on &lsquo;Quick Set&rsquo; to start the Configuration&nbsp;<a class="anchor" href="#click-on-quick-set-to-start-the-configuration"><i class="small linkify icon"></i></a> </h1>
+
+<p><img src="../img/rpic3.png" alt="pic4" /></p>
+
+<hr />
+
+<h1 id="change-name-country-and-band">Change Name, Country, and Band&nbsp;<a class="anchor" href="#change-name-country-and-band"><i class="small linkify icon"></i></a> </h1>
+
+<p><img src="../img/papa2.png" alt="pic5" /></p>
+
+<p>Step 1.  Change the Network Name to PapaBear_something.   Where &lsquo;something&rsquo; could
+be the last 4 digits of the MAC.</p>
+
+<p>Step 2.  Change the Band to 2GHz-B/G/N</p>
+
+<p>Step 3.  Change country to United States</p>
+
+<p>Step 4.  Hit Apply.   Re-connect if winbox loses communications with the unit.</p>
+
+<hr />
+
+<h1 id="add-wifi-password">Add WiFi Password&nbsp;<a class="anchor" href="#add-wifi-password"><i class="small linkify icon"></i></a> </h1>
+
+<p><img src="../img/papa3.png" alt="pic5" /></p>
+
+<p>Choose &lsquo;WPA2&rsquo; as the Security Type.</p>
+
+<p>Enter the WiFi Password, then click on Apply</p>
+
+<hr />
+
+<h1 id="configure-as-bridge">Configure as Bridge&nbsp;<a class="anchor" href="#configure-as-bridge"><i class="small linkify icon"></i></a> </h1>
+
+<p><img src="../img/papa4.png" alt="pic6" /></p>
+
+<p>For Mode, select &lsquo;Bridge&rsquo;</p>
+
+<p>Address Acquisition is &lsquo;Automatic&rsquo;</p>
+
+<p>Address Source is &lsquo;Any&rsquo;</p>
+
+<p>Change the Router Identity to the same as &lsquo;Network Name&rsquo;.  This will
+be the name that shows up in the DHCP clients&rsquo; table on the router.</p>
+
+<p><em>Click Apply</em>.   Almost done.</p>
+
+<hr />
+
+<h1 id="enter-password-for-router">Enter Password for Router&nbsp;<a class="anchor" href="#enter-password-for-router"><i class="small linkify icon"></i></a> </h1>
+
+<p><img src="../img/papa5.png" alt="pic7" /></p>
+
+<p>Note this is not the WiFi password: this is the Password that allows you
+to edit this configuration.</p>
+
+<p><em>Enter the Secret Password</em>.  You should know what it is.</p>
+
+<p><em>Hit Apply</em>.</p>
+
+<p>You&rsquo;re done.    You can hit &lsquo;OK&rsquo;, and exit out of Winbox.</p>
+
+<blockquote>
+<p>Your PapaBear Router should be configured.</p>
+</blockquote>
 
 			</article>
 		</section>

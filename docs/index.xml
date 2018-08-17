@@ -6,10 +6,22 @@
     <description>Recent content on JohnnyReedProjects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Jul 2018 12:19:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Aug 2018 09:20:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ice-energy.github.io/jreed/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MikroTik Client Configuration</title>
+      <link>https://ice-energy.github.io/jreed/post/post_011/mikrotik_client/</link>
+      <pubDate>Fri, 17 Aug 2018 09:20:00 +0000</pubDate>
+      
+      <guid>https://ice-energy.github.io/jreed/post/post_011/mikrotik_client/</guid>
+      <description>Quick Summary This document has a series of screenshots along with explanations, that will walk you through an example of setting up a MikroTik as the Client.
+The basic config strategy is: CPE. CPE is an abbreviation for Customer Premises Equipment.
+Translation: it&amp;rsquo;s a WiFi Bridge to a Wireless Access Point.
+The WiFi Bridge is a substitute for a wired connection. A setup like this can be used instead of physically running ethernet cable.</description>
+    </item>
     
     <item>
       <title>MikroTik PapaBear Configuration</title>

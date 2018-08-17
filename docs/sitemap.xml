@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/post/post_011/mikrotik_client/</loc>
+    <lastmod>2018-08-17T09:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/post/post_010/mikrotik_papabear/</loc>
     <lastmod>2018-07-18T12:19:00+00:00</lastmod>
   </url>
@@ -78,7 +83,7 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/</loc>
-    <lastmod>2018-07-18T12:19:00+00:00</lastmod>
+    <lastmod>2018-08-17T09:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -90,7 +95,7 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/tags/mikrotik/</loc>
-    <lastmod>2018-07-18T12:19:00+00:00</lastmod>
+    <lastmod>2018-08-17T09:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -114,13 +119,13 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/post/</loc>
-    <lastmod>2018-07-18T12:19:00+00:00</lastmod>
+    <lastmod>2018-08-17T09:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ice-energy.github.io/jreed/categories/systems/solutions/</loc>
-    <lastmod>2018-07-18T12:19:00+00:00</lastmod>
+    <lastmod>2018-08-17T09:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
