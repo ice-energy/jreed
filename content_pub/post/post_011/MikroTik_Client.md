@@ -30,6 +30,14 @@ be used instead of physically running ethernet cable.
 
 ---
 
+# Connectivity Strategy
+
+The following picture shows the connectivity scheme used with the MikroTik routers.
+
+![pic1a](../img/connectivity.jpg)
+
+---
+
 # Install 'Winbox'
 
 Winbox is a configuration tool from MikroTik.
@@ -43,7 +51,7 @@ then move it to the Desktop for easy access.
 
 The winbox desktop icon is shown in the picture below.
 
-![pic1a](../img/winbox_icon.png)
+![pic1b](../img/winbox_icon.png)
 
 ---
 
