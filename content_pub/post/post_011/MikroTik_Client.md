@@ -102,9 +102,9 @@ Once it shows, *Single Click* on that entry to Highlight it,
 
 ![pic4](../img/rpic3.png)
 
-`As a point of note for later on in the configuration, the only other tab on this page that will be clicked on is:`
-
-&nbsp; &nbsp; * 'Interfaces' 
+> As a point of note for later on in the configuration, the only other tab on this page that will be clicked on is:
+>
+> &nbsp; &nbsp; &nbsp;  **'Interfaces'**
 
 The 'Interfaces' page is not needed until everything on the **Quick Set** page is complete
 
