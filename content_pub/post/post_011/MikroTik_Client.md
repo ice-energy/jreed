@@ -41,6 +41,10 @@ a drop-down.  When it drops down, the version of Winbox will be shown.  At the
 writing of this document, the version was 3.16.   *Click on it*, let it download,
 then move it to the Desktop for easy access.
 
+The winbox desktop icon is shown in the picture below.
+
+![pic1a](../img/winbox_icon.png)
+
 ---
 
 # Start with a known Router Configuration
@@ -104,7 +108,7 @@ Once it shows, *Single Click* on that entry to Highlight it,
 
 > As a point of note for later on in the configuration, the only other tab on this page that will be clicked on is:
 >
-> &nbsp; &nbsp; &nbsp;  **'Interfaces'**
+> &nbsp; &nbsp; &nbsp; &nbsp;  **'Interfaces'**
 
 The 'Interfaces' page is not needed until everything on the **Quick Set** page is complete
 
