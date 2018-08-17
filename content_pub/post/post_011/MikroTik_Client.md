@@ -69,6 +69,17 @@ to do this, the PapaBear router must be up and working.
 
 # Use Winbox to Discover and Connect
 
+Use a PC that is not connected to any network.   Remove the ethernet cable if attached.
+Disconnect any wifi that is currently connected.
+
+With the PC now isolated from any network, plug in the ethernet cable of the MikroTik,
+in to the PC.
+
+> Having the MikroTik connected directly to the PC will sometimes help in the self-discovery.
+
+OK, now double-click on ‘winbox’, and let it run.
+Click on the ‘Neighbors’ tab, and the powered-on MikroTik should be discovered:
+
 *Double-Click on Winbox*, and let it run.    Click on the 'Neighbors' tab, and
 the MikroTik should be discovered:
 
@@ -81,15 +92,21 @@ Once it shows, *Single Click* on that entry to Highlight it,
 
 ---
 
-# Screen for the 1st connection
+# This is what you will see on the 1st connection
 
 ![pic3](../img/rpic2.png)
 
 ---
 
-# Click on 'Quick Set' to start the Configuration
+# Click on 'Quick Set' to bring up the configuration page
 
 ![pic4](../img/rpic3.png)
+
+`As a point of note for later on in the configuration, the only other tab on this page that will be clicked on is:`
+
+&nbsp; &nbsp; * 'Interfaces' 
+
+The 'Interfaces' page is not needed until everything on the **Quick Set** page is complete
 
 ---
 
