@@ -55,15 +55,15 @@ Here are the steps:
 
 ---
 
-# Initial Connections
+# Make sure the PapaBear router is Configured and Setup
 
-*Plug the ethernet of the MikroTik in to your existing network.*
 
-Plug into an existing port on your switch or your router.
-The discovery of the MikroTik device seems to work better when it is plugged in.
+One of the Key steps in setting up the MikroTik Client is
+the act of pairing it with the PapaBear Router.     In order
+to do this, the PapaBear router must be up and working.
 
-You could also plug the ethernet direct in to your PC.  I have verified
-it works too.
+> If it is not up and discoverable, this Client installation will not work.
+
 
 ---
 
