@@ -162,21 +162,24 @@ quirk with the MikroTik.
 
 **Step 3.**  When 'IceBearPapa' appears, Change the Channel Width to: '20/40Mhz Ce'.
 Doing this will re-init the list, and 'IceBearPapa' should again appear.
-**20/40 Ce** is the intended final setting for Channel Width.
+**20/40Mhz Ce** is the intended final setting for Channel Width.
 
 **Step 4.**  Hit Apply.   Re-connect if winbox loses communications with the unit.
 
 ---
 
-# Add WiFi Password
+# Connect to the PapaBear
 
 
-![pic5](../img/papa3.png)
+![pic8](../img/rpic7.png)
 
 
-Choose 'WPA2' as the Security Type.
+Single Click on the 'IceBearPapa' name that was found in the scan.   The single
+click will highlight the entry in blue.
 
-Enter the WiFi Password, then click on Apply
+Fill in the Password field.
+
+Hit the Connect Button.
 
 ---
 
