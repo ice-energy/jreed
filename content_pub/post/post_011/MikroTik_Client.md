@@ -183,6 +183,17 @@ Hit the Connect Button.
 
 ---
 
+# Wait On and Observe Connection
+
+![pic9](../img/rpic8.png)
+
+The 'Status' field will eventually show: 'connected to ess'
+
+Observe the signal strength graph at the bottom.  It should gradually move across the
+screen as it updates.
+
+---
+
 # Configure as Bridge
 
 
