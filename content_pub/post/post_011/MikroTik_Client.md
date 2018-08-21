@@ -148,18 +148,23 @@ If your connection goes down, run winbox again in order to re-connect.
 
 ---
 
-# Change Name, Country, and Band
+# Modify 'Band' and then 'Channel Width' to discover PapaBear
 
-![pic5](../img/papa2.png)
+![pic7](../img/rpic6.png)
 
-Step 1.  Change the Network Name to PapaBear_something.   Where 'something' could
-be the last 4 digits of the MAC.
+> The goal is for PapaBear to show up in the list.  Follow these directions:
 
-Step 2.  Change the Band to 2GHz-B/G/N
+**Step 1.**  Change the Band to 2Ghz-B/G/N.
 
-Step 3.  Change country to United States
+**Step 2.**  Change the Channel Width to: '20/40Mhz eC'.  Leave it like that for
+just a bit, and 'IceBearPapa' should populate the list.     This step is due to a
+quirk with the MikroTik.
 
-Step 4.  Hit Apply.   Re-connect if winbox loses communications with the unit.
+**Step 3.**  When 'IceBearPapa' appears, Change the Channel Width to: '20/40Mhz Ce'.
+Doing this will re-init the list, and 'IceBearPapa' should again appear.
+**20/40 Ce** is the intended final setting for Channel Width.
+
+**Step 4.**  Hit Apply.   Re-connect if winbox loses communications with the unit.
 
 ---
 
