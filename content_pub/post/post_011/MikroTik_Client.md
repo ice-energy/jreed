@@ -137,6 +137,16 @@ The dialog changes due to the differing setup requirements of the client.
 
 ---
 
+# Select 'United States' from the Country Drop-Down.
+
+![pic6](../img/rpic5.png)
+
+I've seen times where just choosing the country and hitting 'Apply' will cause the connection
+to go down.
+
+If your connection goes down, run winbox again in order to re-connect.
+
+---
 
 # Change Name, Country, and Band
 
