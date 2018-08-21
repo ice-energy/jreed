@@ -36,6 +36,9 @@ The following picture shows the connectivity scheme used with the MikroTik route
 
 ![pic1a](../img/connectivity.jpg)
 
+The Wifi Bridge shown in the figure takes the place of an ethernet cable connecting the
+CDC board with the switch.
+
 ---
 
 # Install 'Winbox'
@@ -121,6 +124,19 @@ Once it shows, *Single Click* on that entry to Highlight it,
 The 'Interfaces' page is not needed until everything on the **Quick Set** page is complete
 
 ---
+
+# Change 'WISP AP' to 'CPE'
+
+![pic5](../img/rpic4.png)
+
+> When 'CPE' is chosen from the Dropdown, the layout on the Dialog is drastically changed.
+
+The default configuration is 'Access Point', a router-type where clients connect to it.
+A router-type of 'CPE' is for clients that connect to the Access Point.
+The dialog changes due to the differing setup requirements of the client.
+
+---
+
 
 # Change Name, Country, and Band
 

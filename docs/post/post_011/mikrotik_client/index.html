@@ -369,7 +369,7 @@ var bodyBgSwitchIndex = 0;
 			</h1>
 			<div class="sub header">
 					<div><span><i class="calendar outline icon"></i>Aug 17, 2018</span></div>
-					<div><span><i class="clock outline icon"></i>3 min read</span></div>
+					<div><span><i class="clock outline icon"></i>4 min read</span></div>
 					<div><span><i class="angle double up icon"></i>Last updated on Aug 17, 2018</span></div>
 			</div>
 			<hr><div class="toc"><nav id="TableOfContents">
@@ -382,6 +382,7 @@ var bodyBgSwitchIndex = 0;
 <li><a href="#use-winbox-to-discover-and-connect">Use Winbox to Discover and Connect</a></li>
 <li><a href="#this-is-what-you-will-see-on-the-1st-connection">This is what you will see on the 1st connection</a></li>
 <li><a href="#click-on-quick-set-to-bring-up-the-configuration-page">Click on &lsquo;Quick Set&rsquo; to bring up the configuration page</a></li>
+<li><a href="#change-wisp-ap-to-cpe">Change &lsquo;WISP AP&rsquo; to &lsquo;CPE&rsquo;</a></li>
 <li><a href="#change-name-country-and-band">Change Name, Country, and Band</a></li>
 <li><a href="#add-wifi-password">Add WiFi Password</a></li>
 <li><a href="#configure-as-bridge">Configure as Bridge</a></li>
@@ -416,6 +417,9 @@ be used instead of physically running ethernet cable.</p>
 <p>The following picture shows the connectivity scheme used with the MikroTik routers.</p>
 
 <p><img src="../img/connectivity.jpg" alt="pic1a" /></p>
+
+<p>The Wifi Bridge shown in the figure takes the place of an ethernet cable connecting the
+CDC board with the switch.</p>
 
 <hr />
 
@@ -506,6 +510,20 @@ the MikroTik should be discovered:</p>
 </blockquote>
 
 <p>The &lsquo;Interfaces&rsquo; page is not needed until everything on the <strong>Quick Set</strong> page is complete</p>
+
+<hr />
+
+<h1 id="change-wisp-ap-to-cpe">Change &lsquo;WISP AP&rsquo; to &lsquo;CPE&rsquo;&nbsp;<a class="anchor" href="#change-wisp-ap-to-cpe"><i class="small linkify icon"></i></a> </h1>
+
+<p><img src="../img/rpic4.png" alt="pic5" /></p>
+
+<blockquote>
+<p>When &lsquo;CPE&rsquo; is chosen from the Dropdown, the layout on the Dialog is drastically changed.</p>
+</blockquote>
+
+<p>The default configuration is &lsquo;Access Point&rsquo;, a router-type where clients connect to it.
+A router-type of &lsquo;CPE&rsquo; is for clients that connect to the Access Point.
+The dialog changes due to the differing setup requirements of the client.</p>
 
 <hr />
 
