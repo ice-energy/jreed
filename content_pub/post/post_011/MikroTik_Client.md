@@ -204,7 +204,7 @@ screen as it updates.
 
 3.  Address source is Any
 
-4.  Change the Router Identity to IceClient_<last_4_digits_of_MAC>.
+4.  Change the Router Identity to IceClient_LastFourDigitsOfMAC.
 
 5.  Change the password.  It's the same password as CDC Boards.  Ask John Reed.
 
