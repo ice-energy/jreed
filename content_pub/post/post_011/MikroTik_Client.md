@@ -196,7 +196,7 @@ screen as it updates.
 
 # Configure as Bridge, change Name and Pass
 
-![pic10](../img/rpic8.png)
+![picA](../img/rpic8.png)
 
 1.  Configuration is 'Bridge'
 
