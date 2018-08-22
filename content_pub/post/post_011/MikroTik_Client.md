@@ -212,6 +212,16 @@ screen as it updates.
 
 ---
 
+# Done with 'Quick Set'.   Next is 'Interfaces'.
+
+1. Note that the Dialog has subtly changed.  The password fields are no longer there, now replaced with a 'Password' button.   If you happen to press it, you will be prompted to enter a new password.   You do not need to press the button.
+
+2.  CPE configuration is done.   Click the little 'x', and the Dialog will terminate.
+
+3.  Moving On!  Click the 'Interfaces' Tab.   A new Dialog should pop up.
+
+---
+
 # Enter Password for Router
 
 ![pic7](../img/papa5.png)
