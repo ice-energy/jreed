@@ -224,28 +224,25 @@ screen as it updates.
 
 ---
 
-# Enter Password for Router
+# The 'Interface List' Dialog
 
-![pic7](../img/papa5.png)
+![picC](../img/rpicC.png)
 
-Note this is not the WiFi password: this is the Password that allows you
-to edit this configuration.
+The field 'ether1' is the ethernet port, and one of it's parameters needs to change.
 
-*Enter the Secret Password*.  You should know what it is.
+A single click on the entry will highlight it in blue.
 
-*Hit Apply*.
+Now **DOUBLE-CLICK on the ether1 entry**, and a new Dialog will appear.
 
-You're done.    You can hit 'OK', and exit out of Winbox.
+---
 
+# Ether1 Dialog (General Tab)
 
- > Your PapaBear Router should be configured.
+![picD](../img/rpicD.png)
 
+The new Dialog is titled **Interface \<ether1\>**.   The 'General' Tab is initially shown.
 
-
-
-
-
-
+Click on the 'Ethernet' Tab.   The port negotiation parameters need to be changed.
 
 
 
