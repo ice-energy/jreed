@@ -214,6 +214,8 @@ screen as it updates.
 
 # Done with 'Quick Set'.   Next is 'Interfaces'.
 
+![picB](../img/rpicA.png)
+
 1. Note that the Dialog has subtly changed.  The password fields are no longer there, now replaced with a 'Password' button.   If you happen to press it, you will be prompted to enter a new password.   You do not need to press the button.
 
 2.  CPE configuration is done.   Click the little 'x', and the Dialog will terminate.
