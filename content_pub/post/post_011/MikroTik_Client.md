@@ -185,7 +185,7 @@ Hit the Connect Button.
 
 # Wait On and Observe Connection
 
-![pic9](../img/rpic8.png)
+![pic9](../img/rpic9.png)
 
 The 'Status' field will eventually show: 'connected to ess'
 
@@ -194,21 +194,21 @@ screen as it updates.
 
 ---
 
-# Configure as Bridge
+# Configure as Bridge, change Name and Pass
 
+![pic10](../img/rpic8.png)
 
-![pic6](../img/papa4.png)
+1.  Configuration is 'Bridge'
 
-For Mode, select 'Bridge'
+2.  Address Acquisition is 'Automatic' (will get it using DHCP)
 
-Address Acquisition is 'Automatic'
+3.  Address source is Any
 
-Address Source is 'Any'
+4.  Change the Router Identity to IceClient_<last_4_digits_of_MAC>.
 
-Change the Router Identity to the same as 'Network Name'.  This will
-be the name that shows up in the DHCP clients' table on the router.
+5.  Change the password.  It's the same password as CDC Boards.  Ask John Reed.
 
-*Click Apply*.   Almost done.
+6.  Hit 'Apply'
 
 ---
 

@@ -387,7 +387,7 @@ var bodyBgSwitchIndex = 0;
 <li><a href="#modify-band-and-then-channel-width-to-discover-papabear">Modify &lsquo;Band&rsquo; and then &lsquo;Channel Width&rsquo; to discover PapaBear</a></li>
 <li><a href="#connect-to-the-papabear">Connect to the PapaBear</a></li>
 <li><a href="#wait-on-and-observe-connection">Wait On and Observe Connection</a></li>
-<li><a href="#configure-as-bridge">Configure as Bridge</a></li>
+<li><a href="#configure-as-bridge-change-name-and-pass">Configure as Bridge, change Name and Pass</a></li>
 <li><a href="#enter-password-for-router">Enter Password for Router</a></li>
 </ul>
 </nav></div>
@@ -577,7 +577,7 @@ click will highlight the entry in blue.</p>
 
 <h1 id="wait-on-and-observe-connection">Wait On and Observe Connection&nbsp;<a class="anchor" href="#wait-on-and-observe-connection"><i class="small linkify icon"></i></a> </h1>
 
-<p><img src="../img/rpic8.png" alt="pic9" /></p>
+<p><img src="../img/rpic9.png" alt="pic9" /></p>
 
 <p>The &lsquo;Status&rsquo; field will eventually show: &lsquo;connected to ess&rsquo;</p>
 
@@ -586,20 +586,23 @@ screen as it updates.</p>
 
 <hr />
 
-<h1 id="configure-as-bridge">Configure as Bridge&nbsp;<a class="anchor" href="#configure-as-bridge"><i class="small linkify icon"></i></a> </h1>
+<h1 id="configure-as-bridge-change-name-and-pass">Configure as Bridge, change Name and Pass&nbsp;<a class="anchor" href="#configure-as-bridge-change-name-and-pass"><i class="small linkify icon"></i></a> </h1>
 
-<p><img src="../img/papa4.png" alt="pic6" /></p>
+<p><img src="../img/rpic8.png" alt="pic10" /></p>
 
-<p>For Mode, select &lsquo;Bridge&rsquo;</p>
+<ol>
+<li><p>Configuration is &lsquo;Bridge&rsquo;</p></li>
 
-<p>Address Acquisition is &lsquo;Automatic&rsquo;</p>
+<li><p>Address Acquisition is &lsquo;Automatic&rsquo; (will get it using DHCP)</p></li>
 
-<p>Address Source is &lsquo;Any&rsquo;</p>
+<li><p>Address source is Any</p></li>
 
-<p>Change the Router Identity to the same as &lsquo;Network Name&rsquo;.  This will
-be the name that shows up in the DHCP clients&rsquo; table on the router.</p>
+<li><p>Change the Router Identity to IceClient_<last_4_digits_of_MAC>.</p></li>
 
-<p><em>Click Apply</em>.   Almost done.</p>
+<li><p>Change the password.  It&rsquo;s the same password as CDC Boards.  Ask John Reed.</p></li>
+
+<li><p>Hit &lsquo;Apply&rsquo;</p></li>
+</ol>
 
 <hr />
 
