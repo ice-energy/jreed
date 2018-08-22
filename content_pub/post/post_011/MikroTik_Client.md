@@ -228,7 +228,7 @@ screen as it updates.
 
 ![picC](../img/rpicC.png)
 
-The field 'ether1' is the ethernet port, and one of it's parameters needs to change.
+The field 'ether1' is the ethernet port, and one of its parameters needs to change.
 
 A single click on the entry will highlight it in blue.
 
@@ -244,11 +244,35 @@ The new Dialog is titled **Interface \<ether1\>**.   The 'General' Tab is initia
 
 Click on the 'Ethernet' Tab.   The port negotiation parameters need to be changed.
 
+---
 
+# Modify the Auto-Negotiation Parameters
 
+![picE](../img/rpicE.png)
 
+Auto Negotiation should be un-checked.
 
+100M half and 100M full, both un-checked.
 
+1000M half, and 1000M full, both un-checked.
+
+Hit Apply.
+
+---
+
+# Verify the Auto-Negotiation Settings
+
+![picF](../img/rpicF.png)
+
+Dialog should look like this, with Speed at 10Mbps and 'Full Duplex' checked.
+
+Hit OK
+
+---
+
+# Done, Exit out of Winbox
+
+If you made it this far, job well done!!  ;-)
 
 
 
