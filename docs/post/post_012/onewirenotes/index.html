@@ -23,13 +23,9 @@ body, body.pushable {
 	<meta name="author" content="John Reed" />
 	<meta name="description" content="Quick Summary This is a placeholder for notes and pics of 1-Wire stuff.
 CMD_READ_SCRATCHPAD The following picture shows the 1-Wire Protocol for when the CMD_READ_SCRATCHPAD command is sent.
-55,28,FF,71,10,B2,17,01,FF,BE (write)
-Followed by:
-92,01,4B,46,7F,FF,0C,10,B5 (read)
-0xBE on the write-side is CMD_READ_SCRATCHPAD
-5th byte read on the read side is SCRATCHPAD_CONFIG_REGISTER - 0x7F = TEMP_RESOLUTION_12_BIT
-Result, pulse startup Heres a scope screenshot showing the reset pulse.
-Byte Written Screenshot showing a written byte." />
+ 55, 28,FF,71,10,B2,17,01,FF, BE (write)  Followed by:
+ 92,01,4B,46,7F,FF,0C,10,B5 (read)  Where:
+ - 0xBE on the write-side is CMD_READ_SCRATCHPAD - 5th byte read on the read side is SCRATCHPAD_CONFIG_REGISTER - 0x7F = TEMP_RESOLUTION_12_BIT  And here is the device id from the 1-Wire configuration:" />
 <meta name="generator" content="Hugo 0.46" />
 
 <link rel="shortcut icon" href="img/defaultFav.ico">
@@ -425,16 +421,28 @@ var bodyBgSwitchIndex = 0;
 
 <p><img src="../img/Read_Scratchpad.png" alt="pic2" /></p>
 
-<p>55,28,FF,71,10,B2,17,01,FF,BE   (write)</p>
+<pre><code> 55, 28,FF,71,10,B2,17,01,FF, BE   (write)
+</code></pre>
 
 <p>Followed by:</p>
 
-<p>92,01,4B,46,7F,FF,0C,10,B5     (read)</p>
+<pre><code> 92,01,4B,46,7F,FF,0C,10,B5     (read)
+</code></pre>
 
-<p>0xBE on the write-side is CMD_READ_SCRATCHPAD</p>
+<p>Where:</p>
 
-<p>5th byte read on the read side is SCRATCHPAD_CONFIG_REGISTER
-       - 0x7F = TEMP_RESOLUTION_12_BIT</p>
+<pre><code> - 0xBE on the write-side is CMD_READ_SCRATCHPAD
+
+ - 5th byte read on the read side is SCRATCHPAD_CONFIG_REGISTER
+        - 0x7F = TEMP_RESOLUTION_12_BIT
+</code></pre>
+
+<p>And here is the device id from the 1-Wire configuration:</p>
+
+<pre><code>ONEWIRE = {
+  { Name='I0.OAt', id='FF0117B21071FF28', channel=1, slot=1 },
+},
+</code></pre>
 
 <hr />
 

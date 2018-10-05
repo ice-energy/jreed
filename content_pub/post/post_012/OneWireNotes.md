@@ -28,17 +28,26 @@ The following picture shows the 1-Wire Protocol for when the *CMD_READ_SCRATCHPA
 
 ![pic2](../img/Read_Scratchpad.png)
 
-55,28,FF,71,10,B2,17,01,FF,BE   (write)
+     55, 28,FF,71,10,B2,17,01,FF, BE   (write)
 
 Followed by:
 
-92,01,4B,46,7F,FF,0C,10,B5     (read)
+     92,01,4B,46,7F,FF,0C,10,B5     (read)
 
+Where:
 
-0xBE on the write-side is CMD_READ_SCRATCHPAD
+     - 0xBE on the write-side is CMD_READ_SCRATCHPAD
 
-5th byte read on the read side is SCRATCHPAD_CONFIG_REGISTER
-       - 0x7F = TEMP_RESOLUTION_12_BIT
+     - 5th byte read on the read side is SCRATCHPAD_CONFIG_REGISTER
+            - 0x7F = TEMP_RESOLUTION_12_BIT
+
+And here is the device id from the 1-Wire configuration:
+
+```
+ONEWIRE = {
+  { Name='I0.OAt', id='FF0117B21071FF28', channel=1, slot=1 },
+},
+```
 
 ---
 
