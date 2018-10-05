@@ -16,17 +16,25 @@ body, body.pushable {
 }
 
 </style><title>
-
+1-Wire Notes
 </title><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="John Reed" />
-	<meta name="description" content="My Projects: A Placeholder for Notes &amp; Documentation" />
+	<meta name="description" content="Quick Summary This is a placeholder for notes and pics of 1-Wire stuff.
+CMD_READ_SCRATCHPAD The following picture shows the 1-Wire Protocol for when the CMD_READ_SCRATCHPAD command is sent.
+55,28,FF,71,10,B2,17,01,FF,BE (write)
+Followed by:
+92,01,4B,46,7F,FF,0C,10,B5 (read)
+0xBE on the write-side is CMD_READ_SCRATCHPAD
+5th byte read on the read side is SCRATCHPAD_CONFIG_REGISTER - 0x7F = TEMP_RESOLUTION_12_BIT
+Result, pulse startup Heres a scope screenshot showing the reset pulse.
+Byte Written Screenshot showing a written byte." />
 <meta name="generator" content="Hugo 0.46" />
 
 <link rel="shortcut icon" href="img/defaultFav.ico">
 
-<link rel="canonical" href="https://ice-energy.github.io/jreed/content/" />
+<link rel="canonical" href="https://ice-energy.github.io/jreed/post/post_012/onewirenotes/" />
 <link rel="alternative" href="/jreed/index.xml" title="JohnnyReedProjects" type="application/atom+xml"/>
 <link rel="stylesheet" type="text/css" href="/jreed/css/semantic_2.3.1.min.css">
 <style>
@@ -235,23 +243,17 @@ var bodyBgSwitchIndex = 0;
 			<i class="inverted big link cubes icon" title="All Categories"></i>
 		</a>
     </div>
-	
-	<div class="item">
-		
-		<i class="disabled inverted big chevron circle left icon" title="Previous page"></i>
-  	
-  </div>
-	<div class="item">	
-		<i class="disabled inverted big chevron circle right icon" title="Next page"></i>
-		
+	<div class="ui container tablet computer only grid">
+		<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+			<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+		</div>
 	</div>
 	
 </nav>
 
 
 <div class="ui centered grid">
-	<div class="fifteen wide mobile fifteen wide tablet four wide computer column">
-		<div class="ui inverted accordion">
+	<div class="sixteen wide mobile only column"><div class="ui inverted accordion">
 	<div id="header" class="ui inverted segment column box">
 		<header id="author" class="ui top attached center aligned inverted segment"><div class="ui small circular image">
 	<img src="/jreed/img/jr.jpg">
@@ -260,10 +262,10 @@ var bodyBgSwitchIndex = 0;
 	<div class="sub header">Computer guy, Golfer dude</div>
 </h3>
 </header>
-		<div class="active title header-title"><div id="tag-category-pop" class="ui red right corner label">		
-				<i class="hand point icon up"title="Click this to pop tags and categories"></i>		
+		<div class=" title header-title"><div id="tag-category-pop" class="ui red right corner label">		
+				<i class="hand point icon down"title="Click this to pop tags and categories"></i>		
 			</div></div>
-		<div id="tag-category" class="active content"><section class="ui attached center aligned inverted segment dream-tags none flexbox">
+		<div id="tag-category" class=" content"><section class="ui attached center aligned inverted segment dream-tags none flexbox">
 <a class="ui label" href="/jreed/tags/1-wire/index.html" title="1-wire">1-wire</a>
 
 <a class="ui label" href="/jreed/tags/github/index.html" title="github">github</a>
@@ -382,14 +384,110 @@ var bodyBgSwitchIndex = 0;
     
 <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p></footer>
 	</div>
-</div>
-	</div>
-	<div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-		<div class="cards row box">
+</div></div>
+	<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+		<section class="ui secondary top attached black segment post-head">
+			<h1 class="post-title">
+				1-Wire Notes
+			</h1>
+			<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Oct 5, 2018</span></div>
+					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Oct 5, 2018</span></div>
+			</div>
+			<hr><div class="toc"><nav id="TableOfContents">
+<ul>
+<li><a href="#quick-summary">Quick Summary</a></li>
+<li><a href="#cmd-read-scratchpad">CMD_READ_SCRATCHPAD</a></li>
+<li><a href="#result-pulse-startup">Result, pulse startup</a></li>
+<li><a href="#byte-written">Byte Written</a></li>
+<li><a href="#byte-read">Byte Read</a></li>
+</ul>
+</nav></div>
 			
-	
+			
+			<article class="post-content twemoji">
+				
 
-		</div>
+<p><img src="../img/1WireNotes.png" alt="pic1" /></p>
+
+<hr />
+
+<h1 id="quick-summary">Quick Summary&nbsp;<a class="anchor" href="#quick-summary"><i class="small linkify icon"></i></a> </h1>
+
+<p>This is a placeholder for notes and pics of 1-Wire stuff.</p>
+
+<hr />
+
+<h1 id="cmd-read-scratchpad">CMD_READ_SCRATCHPAD&nbsp;<a class="anchor" href="#cmd-read-scratchpad"><i class="small linkify icon"></i></a> </h1>
+
+<p>The following picture shows the 1-Wire Protocol for when the <em>CMD_READ_SCRATCHPAD</em> command is sent.</p>
+
+<p><img src="../Read_Scratchpad.png" alt="pic2" /></p>
+
+<p>55,28,FF,71,10,B2,17,01,FF,BE   (write)</p>
+
+<p>Followed by:</p>
+
+<p>92,01,4B,46,7F,FF,0C,10,B5     (read)</p>
+
+<p>0xBE on the write-side is CMD_READ_SCRATCHPAD</p>
+
+<p>5th byte read on the read side is SCRATCHPAD_CONFIG_REGISTER
+       - 0x7F = TEMP_RESOLUTION_12_BIT</p>
+
+<hr />
+
+<h1 id="result-pulse-startup">Result, pulse startup&nbsp;<a class="anchor" href="#result-pulse-startup"><i class="small linkify icon"></i></a> </h1>
+
+<p>Heres a scope screenshot showing the reset pulse.</p>
+
+<p><img src="../scope_resetpulse.png" alt="pic3" /></p>
+
+<hr />
+
+<h1 id="byte-written">Byte Written&nbsp;<a class="anchor" href="#byte-written"><i class="small linkify icon"></i></a> </h1>
+
+<p>Screenshot showing a written byte.</p>
+
+<p><img src="../scope_writebyte.png" alt="pic4" /></p>
+
+<hr />
+
+<h1 id="byte-read">Byte Read&nbsp;<a class="anchor" href="#byte-read"><i class="small linkify icon"></i></a> </h1>
+
+<p>Screenshot showing a byte to read.
+This byte is written by the temp probe.</p>
+
+<p><img src="../scope_readbyte.png" alt="pic5" /></p>
+
+			</article>
+		</section>
+		<section class="ui secondary attached segment dream-tags">
+<a class="ui label" href="/jreed/tags/1-wire/index.html" title="1-wire">1-wire</a>
+
+<a class="ui label" href="/jreed/tags/github/index.html" title="github">github</a>
+
+<a class="ui label" href="/jreed/tags/golang/index.html" title="golang">golang</a>
+
+<a class="ui label" href="/jreed/tags/linux/index.html" title="linux">linux</a>
+
+<a class="ui label" href="/jreed/tags/mikrotik/index.html" title="mikrotik">mikrotik</a>
+
+<a class="ui label" href="/jreed/tags/modbus/index.html" title="modbus">modbus</a>
+
+<a class="ui label" href="/jreed/tags/pic/index.html" title="pic">pic</a>
+
+<a class="ui label" href="/jreed/tags/plc/index.html" title="plc">plc</a>
+
+<a class="ui label" href="/jreed/tags/ubuntu/index.html" title="ubuntu">ubuntu</a>
+
+<a class="ui label" href="/jreed/tags/zmq/index.html" title="zmq">zmq</a>
+
+<a class="ui label" href="/jreed/tags/zoneminder/index.html" title="zoneminder">zoneminder</a>
+
+
+		</section>
 	</div>
 </div>
 
