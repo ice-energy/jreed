@@ -7,7 +7,7 @@ categories:
 - development
 description : "Notes on 1-Wire Development"
 draft: false
-cover: "/jreed/img/cover_1WireNotes.jpg"
+cover: "/jreed/img/cover_1WireNotes.png"
 menu: main
 
 ---
@@ -26,7 +26,7 @@ This is a placeholder for notes and pics of 1-Wire stuff.
 
 The following picture shows the 1-Wire Protocol for when the *CMD_READ_SCRATCHPAD* command is sent.
 
-![pic2](../Read_Scratchpad.png)
+![pic2](../img/Read_Scratchpad.png)
 
 55,28,FF,71,10,B2,17,01,FF,BE   (write)
 
@@ -46,7 +46,7 @@ Followed by:
 
 Heres a scope screenshot showing the reset pulse.
 
-![pic3](../scope_resetpulse.png)
+![pic3](../img/scope_resetpulse.png)
 
 ---
 
@@ -54,7 +54,7 @@ Heres a scope screenshot showing the reset pulse.
 
 Screenshot showing a written byte.
 
-![pic4](../scope_writebyte.png)
+![pic4](../img/scope_writebyte.png)
 
 
 ---
@@ -64,7 +64,7 @@ Screenshot showing a written byte.
 Screenshot showing a byte to read.
 This byte is written by the temp probe.
 
-![pic5](../scope_readbyte.png)
+![pic5](../img/scope_readbyte.png)
 
 
 
