@@ -22,8 +22,7 @@ RPI Reference Platforms
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="John Reed" />
 	<meta name="description" content="Quick Summary A few notes about the Raspberry Pi Development Platforms
-What&amp;rsquo;s in your kit?  2 Raspberry Pi&amp;rsquo;s 3 sdcards:  1 sdcard with Ubuntu Core installed 1 sdcard with OpenWrt installed 1 sdcard blank.  standoffs to raise the Pi off the desk Power Supply Serial Cable  Result, pulse startup Heres a scope screenshot showing the reset pulse.
-Reset should be at least 480us. Master releases bus (goes high) Then Slave will take bus low for at least 60us." />
+What&amp;rsquo;s in your kit?  2 Raspberry Pi&amp;rsquo;s 3 sdcards:  1 sdcard with Ubuntu Core installed 1 sdcard with OpenWrt installed 1 sdcard blank.  standoffs to raise the Pi off the desk Power Supply Serial Cable, instructions on hooking it up  Raspberry Pi 3 B There is a 3 B&#43; out there. Faster processor, does 5GHz wireless." />
 <meta name="generator" content="Hugo 0.46" />
 
 <link rel="shortcut icon" href="img/defaultFav.ico">
@@ -416,15 +415,18 @@ var bodyBgSwitchIndex = 0;
 			</h1>
 			<div class="sub header">
 					<div><span><i class="calendar outline icon"></i>Jan 29, 2019</span></div>
-					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="clock outline icon"></i>4 min read</span></div>
 					<div><span><i class="angle double up icon"></i>Last updated on Jan 29, 2019</span></div>
 			</div>
 			<hr><div class="toc"><nav id="TableOfContents">
 <ul>
 <li><a href="#quick-summary">Quick Summary</a></li>
 <li><a href="#what-s-in-your-kit">What&rsquo;s in your kit?</a></li>
-<li><a href="#result-pulse-startup">Result, pulse startup</a></li>
-<li><a href="#byte-written">Byte Written</a></li>
+<li><a href="#raspberry-pi-3-b">Raspberry Pi 3 B</a></li>
+<li><a href="#ubuntu-core-the-old-stuff">Ubuntu Core, the old stuff</a></li>
+<li><a href="#ubuntu-core-the-new-stuff">Ubuntu Core, the New stuff</a></li>
+<li><a href="#issues-with-ubuntu-core">Issues with Ubuntu Core</a></li>
+<li><a href="#configure-your-ubuntu-core">Configure your Ubuntu Core</a></li>
 <li><a href="#byte-read">Byte Read</a></li>
 </ul>
 </nav></div>
@@ -456,32 +458,100 @@ var bodyBgSwitchIndex = 0;
 </ul></li>
 <li>standoffs to raise the Pi off the desk</li>
 <li>Power Supply</li>
-<li>Serial Cable</li>
+<li>Serial Cable, instructions on hooking it up</li>
 </ul>
 
 <hr />
 
-<h1 id="result-pulse-startup">Result, pulse startup&nbsp;<a class="anchor" href="#result-pulse-startup"><i class="small linkify icon"></i></a> </h1>
+<h1 id="raspberry-pi-3-b">Raspberry Pi 3 B&nbsp;<a class="anchor" href="#raspberry-pi-3-b"><i class="small linkify icon"></i></a> </h1>
 
-<p>Heres a scope screenshot showing the reset pulse.</p>
+<p>There is a 3 B+ out there.   Faster processor, does 5GHz wireless.</p>
 
-<p><img src="../img/scope_resetpulse.png" alt="pic3" /></p>
+<p>3 B Specs that we care about:
+  - Quad-Core processor, 64 bit, plenty of compute power
+  - wifi 2.4Ghz
+  - 1 GB ram, nice!
+  - Bluetooth.
+  - Lan and USB</p>
 
-<p>Reset should be at least 480us.  Master releases bus (goes high)
-Then Slave will take bus low for at least 60us.</p>
+<p>Flexible HW platform that can run just about anything.</p>
+
+<p>With that said, my 2 choices for Platforms or Distros is Ubuntu and Openwrt.
+Ubuntu, because I&rsquo;ve been using it forever and it&rsquo;s solid.
+Openwrt because I&rsquo;ve had success with it in the HooToo devices.</p>
 
 <hr />
 
-<h1 id="byte-written">Byte Written&nbsp;<a class="anchor" href="#byte-written"><i class="small linkify icon"></i></a> </h1>
+<h1 id="ubuntu-core-the-old-stuff">Ubuntu Core, the old stuff&nbsp;<a class="anchor" href="#ubuntu-core-the-old-stuff"><i class="small linkify icon"></i></a> </h1>
 
-<p>Screenshot showing a written byte.</p>
+<p><img src="../img/UbuntuCore.png" alt="pic2" /></p>
 
-<p><img src="../img/scope_writebyte.png" alt="pic4" /></p>
+<p>Ubuntu Core is a GREATLY reduced server type distribution of Ubuntu.
+On the order of 400MB on a fresh install.   There&rsquo;s no graphics.   There&rsquo;s not
+even an initial log-in, I had to add that.</p>
 
-<p>To read the byte written (think PIC acting in sniffer mode):
- - start clock on the falling edge
- - sample at about 30us   (yes, micro seconds)
- - 18us will work, then its all same</p>
+<p>The new Ubuntu Core is VERY, VERY different from the Ubuntu Core that I
+have installed.</p>
+
+<p>My &ldquo;old&rdquo; Ubuntu Core is based on 14.04.5 LTS (Trusty Tahr).   Been using it since
+2013, and I&rsquo;ve installed it and used it on probably 10 different hardware platforms:
+all ARM based.  It has worked fantastic on all these platforms.</p>
+
+<p>When the distro initially comes up there&rsquo;s barely anything to do, and one must
+install packages to have any sort of useful.</p>
+
+<p>I have put together a shell script named &ldquo;1stboot_config.sh&rdquo;.  It&rsquo;s meant to be run
+after the unit 1st comes up.    It installs a lot of stuff, and also then moves a bunch
+of files to their final landing spot.</p>
+
+<hr />
+
+<h1 id="ubuntu-core-the-new-stuff">Ubuntu Core, the New stuff&nbsp;<a class="anchor" href="#ubuntu-core-the-new-stuff"><i class="small linkify icon"></i></a> </h1>
+
+<p>I spent about 3-4 hours on Friday messing around with the latest Ubuntu Core:  18.04.
+This is the distro that they are touting for IoT, based on their concept of &ldquo;snap packages&rdquo;</p>
+
+<p>Installation was easy enough, no problem there.</p>
+
+<p>The distro itself, is to me, pretty quirky.    My main take-away is this:</p>
+
+<p><code>New Ubuntu Core, based on snaps, is a walled garden</code>.</p>
+
+<p>There&rsquo;s a learning curve here, not sure how steep, regarding these &ldquo;snap&rdquo; packages.</p>
+
+<p>My take is that the new Ubuntu Core is purely a target, and you&rsquo;ve got to develop these snap packages on another system.    Once developed, you upload your snap to a Ubuntu site.   Once it&rsquo;s on their site, NOW you can download the snap to your target.</p>
+
+<p>Or something like that.</p>
+
+<p>This thing is super secure, I could not add a user, and there is no concept of a root password.    It&rsquo;s like you get one user, you have to register credentials for that user on the Ubuntu site, and that&rsquo;s the only username that can log in.    You have to upload ssh credentials to the Ubuntu site in order to login.</p>
+
+<p>All pretty messy.   But might work great in deploying 1000&rsquo;s of these devices.</p>
+
+<hr />
+
+<h1 id="issues-with-ubuntu-core">Issues with Ubuntu Core&nbsp;<a class="anchor" href="#issues-with-ubuntu-core"><i class="small linkify icon"></i></a> </h1>
+
+<p>I think the primary issue is that this distribution is not a router, instead it&rsquo;s a server.</p>
+
+<p>But there&rsquo;s no reason it can route.</p>
+
+<p>What I have not figured out yet is how to get both network interfaces up and active at the same time.    Meaning you can ping both devices.</p>
+
+<p>I can ping one device.   Routing tables don&rsquo;t seem to be set up properly.   And even when I
+do set them up properly (by hand), I still can ping both devices.</p>
+
+<p>After boot-up, the active lan device is fairly random.   Sometimes the active device will be the ethernet port, and sometimes it will be the wifi.   ssh for instance will only work on one device.</p>
+
+<p>The other issue has to do with the direction Ubuntu is taking &ldquo;Ubuntu Core&rdquo;.   I liked the old
+stuff.   I&rsquo;m going to need quite a bit of time to figure out their &ldquo;walled garden space&rdquo;.</p>
+
+<hr />
+
+<h1 id="configure-your-ubuntu-core">Configure your Ubuntu Core&nbsp;<a class="anchor" href="#configure-your-ubuntu-core"><i class="small linkify icon"></i></a> </h1>
+
+<ul>
+<li>/etc/wpa_supplicant/wpa_supplicant.conf</li>
+</ul>
 
 <hr />
 
