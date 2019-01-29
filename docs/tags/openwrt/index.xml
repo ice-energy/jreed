@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openwrt on JohnnyReedProjects</title>
+    <link>https://ice-energy.github.io/jreed/tags/openwrt/</link>
+    <description>Recent content in Openwrt on JohnnyReedProjects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Jan 2019 10:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ice-energy.github.io/jreed/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RPI Reference Platforms</title>
+      <link>https://ice-energy.github.io/jreed/post/post_013/referenceplatform/</link>
+      <pubDate>Tue, 29 Jan 2019 10:00:00 +0000</pubDate>
+      
+      <guid>https://ice-energy.github.io/jreed/post/post_013/referenceplatform/</guid>
+      <description>Quick Summary A few notes about the Raspberry Pi Development Platforms
+CMD_READ_SCRATCHPAD The following picture shows the 1-Wire Protocol for when the CMD_READ_SCRATCHPAD command is sent.
+ 55, 28,FF,71,10,B2,17,01,FF, BE (write)  Followed by:
+ 92,01,4B,46,7F,FF,0C,10,B5 (read)  Where:
+ - 0xBE on the write-side is CMD_READ_SCRATCHPAD - 5th byte on the read side is SCRATCHPAD_CONFIG_REGISTER - 0x7F = TEMP_RESOLUTION_12_BIT  And here is the device id from the 1-Wire configuration:</description>
+    </item>
+    
+  </channel>
+</rss>

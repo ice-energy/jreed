@@ -16,19 +16,21 @@ body, body.pushable {
 }
 
 </style><title>
-
-Tag | golang
-
+RPI Reference Platforms
 </title><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="John Reed" />
-	<meta name="description" content="My Projects: A Placeholder for Notes &amp; Documentation" />
+	<meta name="description" content="Quick Summary A few notes about the Raspberry Pi Development Platforms
+CMD_READ_SCRATCHPAD The following picture shows the 1-Wire Protocol for when the CMD_READ_SCRATCHPAD command is sent.
+ 55, 28,FF,71,10,B2,17,01,FF, BE (write)  Followed by:
+ 92,01,4B,46,7F,FF,0C,10,B5 (read)  Where:
+ - 0xBE on the write-side is CMD_READ_SCRATCHPAD - 5th byte on the read side is SCRATCHPAD_CONFIG_REGISTER - 0x7F = TEMP_RESOLUTION_12_BIT  And here is the device id from the 1-Wire configuration:" />
 <meta name="generator" content="Hugo 0.46" />
 
 <link rel="shortcut icon" href="img/defaultFav.ico">
 
-<link rel="canonical" href="https://ice-energy.github.io/jreed/tags/golang/" />
+<link rel="canonical" href="https://ice-energy.github.io/jreed/post/post_013/referenceplatform/" />
 <link rel="alternative" href="/jreed/index.xml" title="JohnnyReedProjects" type="application/atom+xml"/>
 <link rel="stylesheet" type="text/css" href="/jreed/css/semantic_2.3.1.min.css">
 <style>
@@ -93,23 +95,23 @@ var bodyBgSwitchIndex = 0;
 
 <a class="ui label" href="/jreed/tags/github/index.html" title="github">github</a>
 
-<a class="ui label" href="/jreed/tags/golang/index.html" title="golang">golang</a>
-
 <a class="ui label" href="/jreed/tags/linux/index.html" title="linux">linux</a>
 
 <a class="ui label" href="/jreed/tags/mikrotik/index.html" title="mikrotik">mikrotik</a>
 
 <a class="ui label" href="/jreed/tags/modbus/index.html" title="modbus">modbus</a>
 
+<a class="ui label" href="/jreed/tags/openwrt/index.html" title="openwrt">openwrt</a>
+
 <a class="ui label" href="/jreed/tags/pic/index.html" title="pic">pic</a>
 
 <a class="ui label" href="/jreed/tags/plc/index.html" title="plc">plc</a>
 
+<a class="ui label" href="/jreed/tags/rpi/index.html" title="rpi">rpi</a>
+
 <a class="ui label" href="/jreed/tags/ubuntu/index.html" title="ubuntu">ubuntu</a>
 
 <a class="ui label" href="/jreed/tags/zmq/index.html" title="zmq">zmq</a>
-
-<a class="ui label" href="/jreed/tags/zoneminder/index.html" title="zoneminder">zoneminder</a>
 
 </section>	
 	
@@ -154,6 +156,21 @@ var bodyBgSwitchIndex = 0;
 		<div>
 			<i class="cocktail icon"></i>
 			<p>(Hu)go Template Primer</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/jreed/categories/development-linux/index.html">development-linux</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://ice-energy.github.io/jreed/post/post_013/referenceplatform/index.html">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>RPI Reference Platforms</p>
 		</div>
 	</a>
 
@@ -207,7 +224,7 @@ var bodyBgSwitchIndex = 0;
 	
 	
 	<section id="footer" class="ui bottom attached center aligned inverted segment">
-<p>© 2018 JohnnyReedProjects</p>
+<p>© 2019 JohnnyReedProjects</p>
     
 <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p></section>
 </div>
@@ -237,23 +254,17 @@ var bodyBgSwitchIndex = 0;
 			<i class="inverted big link cubes icon" title="All Categories"></i>
 		</a>
     </div>
-	
-	<div class="item">
-		
-		<i class="disabled inverted big chevron circle left icon" title="Previous page"></i>
-  	
-  </div>
-	<div class="item">	
-		<i class="disabled inverted big chevron circle right icon" title="Next page"></i>
-		
+	<div class="ui container tablet computer only grid">
+		<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+			<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+		</div>
 	</div>
 	
 </nav>
 
 
 <div class="ui centered grid">
-	<div class="fifteen wide mobile fifteen wide tablet four wide computer column">
-		<div class="ui inverted accordion">
+	<div class="sixteen wide mobile only column"><div class="ui inverted accordion">
 	<div id="header" class="ui inverted segment column box">
 		<header id="author" class="ui top attached center aligned inverted segment"><div class="ui small circular image">
 	<img src="/jreed/img/jr.jpg">
@@ -262,15 +273,13 @@ var bodyBgSwitchIndex = 0;
 	<div class="sub header">Computer guy, Golfer dude</div>
 </h3>
 </header>
-		<div class="active title header-title"><div id="tag-category-pop" class="ui red right corner label">		
-				<i class="hand point icon up"title="Click this to pop tags and categories"></i>		
+		<div class=" title header-title"><div id="tag-category-pop" class="ui red right corner label">		
+				<i class="hand point icon down"title="Click this to pop tags and categories"></i>		
 			</div></div>
-		<div id="tag-category" class="active content"><section class="ui attached center aligned inverted segment dream-tags none flexbox">
+		<div id="tag-category" class=" content"><section class="ui attached center aligned inverted segment dream-tags none flexbox">
 <a class="ui label" href="/jreed/tags/1-wire/index.html" title="1-wire">1-wire</a>
 
 <a class="ui label" href="/jreed/tags/github/index.html" title="github">github</a>
-
-<a class="ui label" href="/jreed/tags/golang/index.html" title="golang">golang</a>
 
 <a class="ui label" href="/jreed/tags/linux/index.html" title="linux">linux</a>
 
@@ -278,15 +287,17 @@ var bodyBgSwitchIndex = 0;
 
 <a class="ui label" href="/jreed/tags/modbus/index.html" title="modbus">modbus</a>
 
+<a class="ui label" href="/jreed/tags/openwrt/index.html" title="openwrt">openwrt</a>
+
 <a class="ui label" href="/jreed/tags/pic/index.html" title="pic">pic</a>
 
 <a class="ui label" href="/jreed/tags/plc/index.html" title="plc">plc</a>
 
+<a class="ui label" href="/jreed/tags/rpi/index.html" title="rpi">rpi</a>
+
 <a class="ui label" href="/jreed/tags/ubuntu/index.html" title="ubuntu">ubuntu</a>
 
 <a class="ui label" href="/jreed/tags/zmq/index.html" title="zmq">zmq</a>
-
-<a class="ui label" href="/jreed/tags/zoneminder/index.html" title="zoneminder">zoneminder</a>
 
 </section><section class="ui attached inverted segment dream-categories both flexbox">
 			<div class="inverted accordion">
@@ -329,6 +340,21 @@ var bodyBgSwitchIndex = 0;
 		<div>
 			<i class="cocktail icon"></i>
 			<p>(Hu)go Template Primer</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/jreed/categories/development-linux/index.html">development-linux</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://ice-energy.github.io/jreed/post/post_013/referenceplatform/index.html">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>RPI Reference Platforms</p>
 		</div>
 	</a>
 
@@ -380,35 +406,138 @@ var bodyBgSwitchIndex = 0;
 </div>
 			</section></div>
 		<footer class="ui bottom attached center aligned inverted segment">
-<p>© 2018 JohnnyReedProjects</p>
+<p>© 2019 JohnnyReedProjects</p>
     
 <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p></footer>
 	</div>
-</div>
-	</div>
-	<div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-		<div class="cards row box">
+</div></div>
+	<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+		<section class="ui secondary top attached black segment post-head">
+			<h1 class="post-title">
+				RPI Reference Platforms
+			</h1>
+			<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Jan 29, 2019</span></div>
+					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Jan 29, 2019</span></div>
+			</div>
+			<hr><div class="toc"><nav id="TableOfContents">
+<ul>
+<li><a href="#quick-summary">Quick Summary</a></li>
+<li><a href="#cmd-read-scratchpad">CMD_READ_SCRATCHPAD</a></li>
+<li><a href="#result-pulse-startup">Result, pulse startup</a></li>
+<li><a href="#byte-written">Byte Written</a></li>
+<li><a href="#byte-read">Byte Read</a></li>
+</ul>
+</nav></div>
 			
-	<article class="blog-card none flexbox" style="background-image: url(/jreed/img/cover_gotemplate.jpg)">
-<img class="image" src="/jreed/img/cover_gotemplate.jpg"></img>
-<div class="title-content twemoji">
-	<h3><a class="title" href=https://ice-energy.github.io/jreed/post/post_005/goisforlovers/index.html>(Hu)go Template Primer</a></h3>
-	<div class="intro twemoji"><br><br></div>
-</div>
-<div class="utility-info">
-	<ul class="utility-list">
-		
-		<div><span><i class="calendar icon"></i>Apr 2, 2014</span></div>
-		<div><span><i class="clock icon"></i>8 min read</span></div>
-	</ul>
-</div>
-<div class="color-overlay"></div>
-</article>
+			
+			<article class="post-content twemoji">
+				
 
-	
+<p><img src="../img/IMG_1060.JPG" alt="pic1" /></p>
+
+<hr />
+
+<h1 id="quick-summary">Quick Summary&nbsp;<a class="anchor" href="#quick-summary"><i class="small linkify icon"></i></a> </h1>
+
+<p>A few notes about the Raspberry Pi Development Platforms</p>
+
+<hr />
+
+<h1 id="cmd-read-scratchpad">CMD_READ_SCRATCHPAD&nbsp;<a class="anchor" href="#cmd-read-scratchpad"><i class="small linkify icon"></i></a> </h1>
+
+<p>The following picture shows the 1-Wire Protocol for when the <em>CMD_READ_SCRATCHPAD</em> command is sent.</p>
+
+<p><img src="../img/Read_Scratchpad.png" alt="pic2" /></p>
+
+<pre><code> 55, 28,FF,71,10,B2,17,01,FF, BE   (write)
+</code></pre>
+
+<p>Followed by:</p>
+
+<pre><code> 92,01,4B,46,7F,FF,0C,10,B5     (read)
+</code></pre>
+
+<p>Where:</p>
+
+<pre><code> - 0xBE on the write-side is CMD_READ_SCRATCHPAD
+
+ - 5th byte on the read side is SCRATCHPAD_CONFIG_REGISTER
+        - 0x7F = TEMP_RESOLUTION_12_BIT
+</code></pre>
+
+<p>And here is the device id from the 1-Wire configuration:</p>
+
+<pre><code>ONEWIRE = {
+  { Name='I0.OAt', id='FF0117B21071FF28', channel=1, slot=1 },
+},
+</code></pre>
+
+<hr />
+
+<h1 id="result-pulse-startup">Result, pulse startup&nbsp;<a class="anchor" href="#result-pulse-startup"><i class="small linkify icon"></i></a> </h1>
+
+<p>Heres a scope screenshot showing the reset pulse.</p>
+
+<p><img src="../img/scope_resetpulse.png" alt="pic3" /></p>
+
+<p>Reset should be at least 480us.  Master releases bus (goes high)
+Then Slave will take bus low for at least 60us.</p>
+
+<hr />
+
+<h1 id="byte-written">Byte Written&nbsp;<a class="anchor" href="#byte-written"><i class="small linkify icon"></i></a> </h1>
+
+<p>Screenshot showing a written byte.</p>
+
+<p><img src="../img/scope_writebyte.png" alt="pic4" /></p>
+
+<p>To read the byte written (think PIC acting in sniffer mode):
+ - start clock on the falling edge
+ - sample at about 30us   (yes, micro seconds)
+ - 18us will work, then its all same</p>
+
+<hr />
+
+<h1 id="byte-read">Byte Read&nbsp;<a class="anchor" href="#byte-read"><i class="small linkify icon"></i></a> </h1>
+
+<p>Screenshot showing a byte to read.
+This byte is written by the temp probe.</p>
+
+<p><img src="../img/scope_readbyte.png" alt="pic5" /></p>
+
+<p>To read the byte written:
+  - start clock on the falling edge
+  - sample at about 18us</p>
+
+			</article>
+		</section>
+		<section class="ui secondary attached segment dream-tags">
+<a class="ui label" href="/jreed/tags/1-wire/index.html" title="1-wire">1-wire</a>
+
+<a class="ui label" href="/jreed/tags/github/index.html" title="github">github</a>
+
+<a class="ui label" href="/jreed/tags/linux/index.html" title="linux">linux</a>
+
+<a class="ui label" href="/jreed/tags/mikrotik/index.html" title="mikrotik">mikrotik</a>
+
+<a class="ui label" href="/jreed/tags/modbus/index.html" title="modbus">modbus</a>
+
+<a class="ui label" href="/jreed/tags/openwrt/index.html" title="openwrt">openwrt</a>
+
+<a class="ui label" href="/jreed/tags/pic/index.html" title="pic">pic</a>
+
+<a class="ui label" href="/jreed/tags/plc/index.html" title="plc">plc</a>
+
+<a class="ui label" href="/jreed/tags/rpi/index.html" title="rpi">rpi</a>
+
+<a class="ui label" href="/jreed/tags/ubuntu/index.html" title="ubuntu">ubuntu</a>
+
+<a class="ui label" href="/jreed/tags/zmq/index.html" title="zmq">zmq</a>
 
 
-		</div>
+		</section>
 	</div>
 </div>
 

@@ -3,7 +3,7 @@ title: "(Hu)go Template Primer"
 date: 2014-04-02
 cover: "/jreed/img/cover_gotemplate.jpg"
 tags:
-  - "golang"
+  - "linux"
 categories:
   - "development"
 menu: main

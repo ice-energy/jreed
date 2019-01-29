@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/post/post_013/referenceplatform/</loc>
+    <lastmod>2019-01-29T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/post/post_012/onewirenotes/</loc>
     <lastmod>2018-10-05T12:50:00+00:00</lastmod>
   </url>
@@ -81,20 +86,20 @@
   </url>
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/categories/development-linux/</loc>
+    <lastmod>2019-01-29T10:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/tags/github/</loc>
     <lastmod>2018-05-31T12:19:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ice-energy.github.io/jreed/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ice-energy.github.io/jreed/</loc>
-    <lastmod>2018-10-05T12:50:00+00:00</lastmod>
+    <lastmod>2019-01-29T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -117,6 +122,12 @@
   </url>
   
   <url>
+    <loc>https://ice-energy.github.io/jreed/tags/openwrt/</loc>
+    <lastmod>2019-01-29T10:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ice-energy.github.io/jreed/tags/pic/</loc>
     <lastmod>2018-05-11T21:52:28-07:00</lastmod>
     <priority>0</priority>
@@ -130,7 +141,13 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/post/</loc>
-    <lastmod>2018-10-05T12:50:00+00:00</lastmod>
+    <lastmod>2019-01-29T10:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ice-energy.github.io/jreed/tags/rpi/</loc>
+    <lastmod>2019-01-29T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -148,19 +165,13 @@
   
   <url>
     <loc>https://ice-energy.github.io/jreed/tags/ubuntu/</loc>
-    <lastmod>2018-05-26T12:19:00+00:00</lastmod>
+    <lastmod>2019-01-29T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ice-energy.github.io/jreed/tags/zmq/</loc>
     <lastmod>2018-05-23T15:52:28-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ice-energy.github.io/jreed/tags/zoneminder/</loc>
-    <lastmod>2018-05-26T12:19:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
