@@ -9,7 +9,7 @@ categories:
 - development, linux
 description : "Notes on Reference Platforms"
 draft: false
-cover: "/jreed/img/IMG_1060.JPG"
+cover: "/jreed/img/cover_ReferencePlatforms.JPG"
 menu: main
 
 ---
