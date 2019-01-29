@@ -22,10 +22,8 @@ RPI Reference Platforms
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="John Reed" />
 	<meta name="description" content="Quick Summary A few notes about the Raspberry Pi Development Platforms
-CMD_READ_SCRATCHPAD The following picture shows the 1-Wire Protocol for when the CMD_READ_SCRATCHPAD command is sent.
- 55, 28,FF,71,10,B2,17,01,FF, BE (write)  Followed by:
- 92,01,4B,46,7F,FF,0C,10,B5 (read)  Where:
- - 0xBE on the write-side is CMD_READ_SCRATCHPAD - 5th byte on the read side is SCRATCHPAD_CONFIG_REGISTER - 0x7F = TEMP_RESOLUTION_12_BIT  And here is the device id from the 1-Wire configuration:" />
+What&amp;rsquo;s in your kit?  2 Raspberry Pi&amp;rsquo;s 3 sdcards:  1 sdcard with Ubuntu Core installed 1 sdcard with OpenWrt installed 1 sdcard blank.  standoffs to raise the Pi off the desk Power Supply Serial Cable  Result, pulse startup Heres a scope screenshot showing the reset pulse.
+Reset should be at least 480us. Master releases bus (goes high) Then Slave will take bus low for at least 60us." />
 <meta name="generator" content="Hugo 0.46" />
 
 <link rel="shortcut icon" href="img/defaultFav.ico">
@@ -424,7 +422,7 @@ var bodyBgSwitchIndex = 0;
 			<hr><div class="toc"><nav id="TableOfContents">
 <ul>
 <li><a href="#quick-summary">Quick Summary</a></li>
-<li><a href="#cmd-read-scratchpad">CMD_READ_SCRATCHPAD</a></li>
+<li><a href="#what-s-in-your-kit">What&rsquo;s in your kit?</a></li>
 <li><a href="#result-pulse-startup">Result, pulse startup</a></li>
 <li><a href="#byte-written">Byte Written</a></li>
 <li><a href="#byte-read">Byte Read</a></li>
@@ -445,34 +443,21 @@ var bodyBgSwitchIndex = 0;
 
 <hr />
 
-<h1 id="cmd-read-scratchpad">CMD_READ_SCRATCHPAD&nbsp;<a class="anchor" href="#cmd-read-scratchpad"><i class="small linkify icon"></i></a> </h1>
+<h1 id="what-s-in-your-kit">What&rsquo;s in your kit?&nbsp;<a class="anchor" href="#what-s-in-your-kit"><i class="small linkify icon"></i></a> </h1>
 
-<p>The following picture shows the 1-Wire Protocol for when the <em>CMD_READ_SCRATCHPAD</em> command is sent.</p>
+<ul>
+<li>2 Raspberry Pi&rsquo;s</li>
+<li>3 sdcards:
 
-<p><img src="../img/Read_Scratchpad.png" alt="pic2" /></p>
-
-<pre><code> 55, 28,FF,71,10,B2,17,01,FF, BE   (write)
-</code></pre>
-
-<p>Followed by:</p>
-
-<pre><code> 92,01,4B,46,7F,FF,0C,10,B5     (read)
-</code></pre>
-
-<p>Where:</p>
-
-<pre><code> - 0xBE on the write-side is CMD_READ_SCRATCHPAD
-
- - 5th byte on the read side is SCRATCHPAD_CONFIG_REGISTER
-        - 0x7F = TEMP_RESOLUTION_12_BIT
-</code></pre>
-
-<p>And here is the device id from the 1-Wire configuration:</p>
-
-<pre><code>ONEWIRE = {
-  { Name='I0.OAt', id='FF0117B21071FF28', channel=1, slot=1 },
-},
-</code></pre>
+<ul>
+<li>1 sdcard with Ubuntu Core installed</li>
+<li>1 sdcard with OpenWrt installed</li>
+<li>1 sdcard blank.</li>
+</ul></li>
+<li>standoffs to raise the Pi off the desk</li>
+<li>Power Supply</li>
+<li>Serial Cable</li>
+</ul>
 
 <hr />
 

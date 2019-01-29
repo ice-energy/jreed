@@ -24,32 +24,17 @@ A few notes about the Raspberry Pi Development Platforms
 
 ---
 
-# CMD_READ_SCRATCHPAD
+# What's in your kit?
 
-The following picture shows the 1-Wire Protocol for when the *CMD_READ_SCRATCHPAD* command is sent.
+ - 2 Raspberry Pi's
+ - 3 sdcards:
+     - 1 sdcard with Ubuntu Core installed
+     - 1 sdcard with OpenWrt installed
+     - 1 sdcard blank.
+ - standoffs to raise the Pi off the desk
+ - Power Supply
+ - Serial Cable
 
-![pic2](../img/Read_Scratchpad.png)
-
-     55, 28,FF,71,10,B2,17,01,FF, BE   (write)
-
-Followed by:
-
-     92,01,4B,46,7F,FF,0C,10,B5     (read)
-
-Where:
-
-     - 0xBE on the write-side is CMD_READ_SCRATCHPAD
-
-     - 5th byte on the read side is SCRATCHPAD_CONFIG_REGISTER
-            - 0x7F = TEMP_RESOLUTION_12_BIT
-
-And here is the device id from the 1-Wire configuration:
-
-```
-ONEWIRE = {
-  { Name='I0.OAt', id='FF0117B21071FF28', channel=1, slot=1 },
-},
-```
 
 ---
 
