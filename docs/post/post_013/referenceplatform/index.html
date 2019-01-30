@@ -423,11 +423,11 @@ var bodyBgSwitchIndex = 0;
 <li><a href="#quick-summary">Quick Summary</a></li>
 <li><a href="#what-s-in-your-kit">What&rsquo;s in your kit?</a></li>
 <li><a href="#raspberry-pi-3-b">Raspberry Pi 3 B</a></li>
-<li><a href="#ubuntu-core-the-old-stuff">Ubuntu Core, the old stuff</a></li>
+<li><a href="#ubuntu-core-the-old-stuff-they-used-to-call-it-ubuntu-base">Ubuntu Core, the old stuff.    They used to call it &lsquo;Ubuntu Base&rsquo;</a></li>
 <li><a href="#ubuntu-core-the-new-stuff">Ubuntu Core, the New stuff</a></li>
 <li><a href="#issues-with-ubuntu-core">Issues with Ubuntu Core</a></li>
 <li><a href="#configure-your-ubuntu-core">Configure your Ubuntu Core</a></li>
-<li><a href="#byte-read">Byte Read</a></li>
+<li><a href="#openwrt">OpenWRT</a></li>
 </ul>
 </nav></div>
 			
@@ -482,9 +482,9 @@ Openwrt because I&rsquo;ve had success with it in the HooToo devices.</p>
 
 <hr />
 
-<h1 id="ubuntu-core-the-old-stuff">Ubuntu Core, the old stuff&nbsp;<a class="anchor" href="#ubuntu-core-the-old-stuff"><i class="small linkify icon"></i></a> </h1>
+<h1 id="ubuntu-core-the-old-stuff-they-used-to-call-it-ubuntu-base">Ubuntu Core, the old stuff.    They used to call it &lsquo;Ubuntu Base&rsquo;&nbsp;<a class="anchor" href="#ubuntu-core-the-old-stuff-they-used-to-call-it-ubuntu-base"><i class="small linkify icon"></i></a> </h1>
 
-<p><img src="../img/UbuntuCore.png" alt="pic2" /></p>
+<p><img src="../img/UbuntuBase.png" alt="pic2" /></p>
 
 <p>Ubuntu Core is a GREATLY reduced server type distribution of Ubuntu.
 On the order of 400MB on a fresh install.   There&rsquo;s no graphics.   There&rsquo;s not
@@ -508,6 +508,8 @@ of files to their final landing spot.</p>
 
 <h1 id="ubuntu-core-the-new-stuff">Ubuntu Core, the New stuff&nbsp;<a class="anchor" href="#ubuntu-core-the-new-stuff"><i class="small linkify icon"></i></a> </h1>
 
+<p><img src="../img/UbuntuCore.png" alt="pic3" /></p>
+
 <p>I spent about 3-4 hours on Friday messing around with the latest Ubuntu Core:  18.04.
 This is the distro that they are touting for IoT, based on their concept of &ldquo;snap packages&rdquo;</p>
 
@@ -515,7 +517,9 @@ This is the distro that they are touting for IoT, based on their concept of &ldq
 
 <p>The distro itself, is to me, pretty quirky.    My main take-away is this:</p>
 
+<blockquote>
 <p><code>New Ubuntu Core, based on snaps, is a walled garden</code>.</p>
+</blockquote>
 
 <p>There&rsquo;s a learning curve here, not sure how steep, regarding these &ldquo;snap&rdquo; packages.</p>
 
@@ -533,12 +537,12 @@ This is the distro that they are touting for IoT, based on their concept of &ldq
 
 <p>I think the primary issue is that this distribution is not a router, instead it&rsquo;s a server.</p>
 
-<p>But there&rsquo;s no reason it can route.</p>
+<p>It should be able to route, there&rsquo;s plenty of instructions I&rsquo;ve found for doing so.</p>
 
 <p>What I have not figured out yet is how to get both network interfaces up and active at the same time.    Meaning you can ping both devices.</p>
 
 <p>I can ping one device.   Routing tables don&rsquo;t seem to be set up properly.   And even when I
-do set them up properly (by hand), I still can ping both devices.</p>
+do set them up properly (by hand), I still can&rsquo;t ping both devices.</p>
 
 <p>After boot-up, the active lan device is fairly random.   Sometimes the active device will be the ethernet port, and sometimes it will be the wifi.   ssh for instance will only work on one device.</p>
 
@@ -553,18 +557,20 @@ stuff.   I&rsquo;m going to need quite a bit of time to figure out their &ldquo;
 <li>/etc/wpa_supplicant/wpa_supplicant.conf</li>
 </ul>
 
+<blockquote>
+<p>Your network SSID
+Your network password</p>
+</blockquote>
+
 <hr />
 
-<h1 id="byte-read">Byte Read&nbsp;<a class="anchor" href="#byte-read"><i class="small linkify icon"></i></a> </h1>
+<h1 id="openwrt">OpenWRT&nbsp;<a class="anchor" href="#openwrt"><i class="small linkify icon"></i></a> </h1>
 
-<p>Screenshot showing a byte to read.
-This byte is written by the temp probe.</p>
+<p><img src="../img/OpenWRT.png" alt="pic4" /></p>
 
-<p><img src="../img/scope_readbyte.png" alt="pic5" /></p>
+<p>I installed from the binaries at:</p>
 
-<p>To read the byte written:
-  - start clock on the falling edge
-  - sample at about 18us</p>
+<p>Referenced from this :wq</p>
 
 			</article>
 		</section>

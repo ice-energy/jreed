@@ -57,10 +57,9 @@ Openwrt because I've had success with it in the HooToo devices.
 
 ---
 
-# Ubuntu Core, the old stuff
+# Ubuntu Core, the old stuff.    They used to call it 'Ubuntu Base'
 
-
-![pic2](../img/UbuntuCore.png)
+![pic2](../img/UbuntuBase.png)
 
 Ubuntu Core is a GREATLY reduced server type distribution of Ubuntu.
 On the order of 400MB on a fresh install.   There's no graphics.   There's not
@@ -84,6 +83,8 @@ of files to their final landing spot.
 
 # Ubuntu Core, the New stuff
 
+![pic3](../img/UbuntuCore.png)
+
 I spent about 3-4 hours on Friday messing around with the latest Ubuntu Core:  18.04.
 This is the distro that they are touting for IoT, based on their concept of "snap packages"
 
@@ -91,7 +92,7 @@ Installation was easy enough, no problem there.
 
 The distro itself, is to me, pretty quirky.    My main take-away is this:
 
-`New Ubuntu Core, based on snaps, is a walled garden`.
+ > `New Ubuntu Core, based on snaps, is a walled garden`.
 
 There's a learning curve here, not sure how steep, regarding these "snap" packages.
 
@@ -109,12 +110,12 @@ All pretty messy.   But might work great in deploying 1000's of these devices.
 
 I think the primary issue is that this distribution is not a router, instead it's a server.
 
-But there's no reason it can route.
+It should be able to route, there's plenty of instructions I've found for doing so.
 
 What I have not figured out yet is how to get both network interfaces up and active at the same time.    Meaning you can ping both devices.
 
 I can ping one device.   Routing tables don't seem to be set up properly.   And even when I
-do set them up properly (by hand), I still can ping both devices.
+do set them up properly (by hand), I still can't ping both devices.
 
 After boot-up, the active lan device is fairly random.   Sometimes the active device will be the ethernet port, and sometimes it will be the wifi.   ssh for instance will only work on one device.
 
@@ -128,22 +129,20 @@ stuff.   I'm going to need quite a bit of time to figure out their "walled garde
 
 - /etc/wpa_supplicant/wpa_supplicant.conf
 
+> Your network SSID
+> Your network password
+
 
 ---
 
-# Byte Read
-
-Screenshot showing a byte to read.
-This byte is written by the temp probe.
-
-![pic5](../img/scope_readbyte.png)
+# OpenWRT
 
 
-To read the byte written:
-  - start clock on the falling edge
-  - sample at about 18us
+![pic4](../img/OpenWRT.png)
 
+I installed from the binaries at:
 
+Referenced from this :wq
 
 
 
