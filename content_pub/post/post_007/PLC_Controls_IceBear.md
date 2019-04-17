@@ -1,5 +1,5 @@
 ---
-title:  "IceBear Control Using PLC"
+title:  "Proof of Concept - IceBear Control Using PLC"
 date:   2018-05-25T14:55:00
 tags:
 - modbus
@@ -11,6 +11,15 @@ IceBear and also extract data from it"
 cover: "/jreed/img/cover_PLCmodules.png"
 draft: false
 menu: main
+
+---
+
+**WARNING** <br>
+This interface is a proof-of-concept and has not been tested in the field.
+Controlling an Ice Bear’s make cycle in this way may result in physical
+damage to the Ice Bear and surrounding structure. Use at your own risk.
+
+This interface is subject to change and may not be supported in the future.
 
 ---
 

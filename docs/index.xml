@@ -81,13 +81,14 @@ It sat there a few weeks. &amp;nbsp; I looked at a few enclosures, almost threw 
     </item>
     
     <item>
-      <title>IceBear Control Using PLC</title>
+      <title>Proof of Concept - IceBear Control Using PLC</title>
       <link>https://ice-energy.github.io/jreed/post/post_007/plc_controls_icebear/</link>
       <pubDate>Fri, 25 May 2018 14:55:00 +0000</pubDate>
       
       <guid>https://ice-energy.github.io/jreed/post/post_007/plc_controls_icebear/</guid>
-      <description>Quick Summary: An off-the-shelf external controller may be used to interface directly with the CDC controller to control the IceBears&amp;rsquo; cycle of Making Ice and Providing Cooling. An example scenario will be shown using a PLC-type controller with a Modbus interface that is used to control an IceBear AND ALSO extract data from it.
-CDC Controller GPIO Inputs: The CDC controller has 8 GPIO inputs as shown in the above picture:</description>
+      <description>WARNING This interface is a proof-of-concept and has not been tested in the field. Controlling an Ice Bear’s make cycle in this way may result in physical damage to the Ice Bear and surrounding structure. Use at your own risk.
+This interface is subject to change and may not be supported in the future.
+Quick Summary: An off-the-shelf external controller may be used to interface directly with the CDC controller to control the IceBears&amp;rsquo; cycle of Making Ice and Providing Cooling.</description>
     </item>
     
     <item>
